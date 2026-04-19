@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FC26 进化追踪器</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>⚽ FC26 进化追踪器</h1>
+  <span class="version-badge">v<span id="ver-display">—</span></span>
+  <button class="btn btn-secondary" onclick="openImport()">↓ 导入</button>
+</header>
+<div class="toolbar">
+  <input type="text" id="search-input" placeholder="搜索球员名…" oninput="renderTable()">
+  <div class="pos-filters" id="pos-filters"></div>
+  <button class="btn btn-primary" onclick="openAddPlayer()" style="margin-left:auto">+ 添加球员</button>
+</div>
+<div class="table-wrap">
+  <table>
+    <colgroup>
+      <col id="cg-name" style="width: 111px;">
+      <col id="cg-url" style="width: 108px;">
+      <col id="cg-pos" style="width: 287px;">
+      <col id="cg-del" style="width: 419px;">
+    </colgroup>
+    <thead>
+      <tr>
+        <th class="sortable col-name" onclick="sortBy('name')" id="th-name">球员名 <span class="si">↕</span><div class="col-resizer" data-col="0"></div></th>
+        <th class="col-url">Futbin 链接<div class="col-resizer" data-col="1"></div></th>
+        <th class="col-pos">位置 / 评分<div class="col-resizer" data-col="2"></div></th>
+        <th class="col-del"></th>
+      </tr>
+    </thead>
+    <tbody id="player-tbody"></tbody>
+  </table>
+</div>
+<div id="toast"></div>
+
+<!-- 添加球员 -->
+<div class="modal-overlay" id="modal-add" style="display: none;" onclick="closeModal('modal-add',event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <h3>添加球员</h3>
+    <div class="form-group"><label>球员名称 *</label><input type="text" id="ap-name" placeholder="例：Mbappé"></div>
+    <div class="form-group"><label>Futbin 链接</label><input type="url" id="ap-url" placeholder="https://www.futbin.com/26/player/..."></div>
+    <div class="form-group">
+      <label>位置 / 评分 <span style="font-weight:400;color:var(--text3)">（选位置后填评分，自动添加下一行）</span></label>
+      <div class="pos-editor-list" id="ap-pos-list"></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('modal-add')">取消</button>
+      <button class="btn btn-primary" onclick="confirmAddPlayer()">添加</button>
+    </div>
+  </div>
+</div>
+
+<!-- 编辑位置 -->
+<div class="modal-overlay" id="modal-pos" style="display: none;" onclick="closeModal('modal-pos',event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <h3 id="modal-pos-title">编辑位置</h3>
+    <input type="hidden" id="pp-player-id">
+    <div class="pos-editor-list" id="pos-editor-list"></div>
+    <button class="btn btn-secondary btn-sm" onclick="addPosRow()" style="margin-bottom:14px">+ 添加位置</button>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('modal-pos')">取消</button>
+      <button class="btn btn-primary" onclick="confirmSavePos()">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- 导入 -->
+<div class="modal-overlay" id="modal-import" style="display: none;" onclick="closeModal('modal-import',event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <h3>导入数据</h3>
+    <p style="color:var(--text2);font-size:13px;margin-bottom:12px">粘贴从另一台电脑导出的文本，增量合并到本地数据。</p>
+    <textarea class="code-area" id="import-text" rows="5" placeholder="粘贴导出的文本…"></textarea>
+    <div id="import-preview" style="margin-top:10px;font-size:13px;color:var(--text2);min-height:20px"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal('modal-import')">取消</button>
+      <button class="btn btn-primary" onclick="confirmImport()">导入合并</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body></html>

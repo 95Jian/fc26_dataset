@@ -1,0 +1,961 @@
+{
+  "version": "4.18.1",
+  "lastExportVersion": "4.18.1",
+  "lastExportTs": 1776479697847,
+  "players": [
+    {
+      "id": "394781180",
+      "name": "Aasgaard",
+      "url": "https://www.futbin.com/26/player/23851_538_552_560_593_566_567_563_559_564_569_634_687_687_668_668_668_683/thelo-aasgaard",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 90.9
+        }
+      ],
+      "updatedAt": 1776589387743
+    },
+    {
+      "id": "394781925",
+      "name": "Aït-Nouri",
+      "url": "https://www.futbin.com/26/player/23956_608_605_587_588_585_594_586_571_566_567/rayan-ait-nouri",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 94
+        }
+      ],
+      "updatedAt": 1776589629715
+    },
+    {
+      "id": "394781876",
+      "name": "Al Dawsari",
+      "url": "https://www.futbin.com/26/player/24143/1",
+      "positions": [
+        {
+          "pos": "LW",
+          "rating": 91.9
+        }
+      ],
+      "updatedAt": 1776589270424
+    },
+    {
+      "id": "394781786",
+      "name": "Al Juwair",
+      "url": "https://www.futbin.com/26/player/23849_582_524_563_566_593_564_594_585_588_587_694_694_694_693/musab-al-juwair",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 89.7
+        },
+        {
+          "pos": "CDM",
+          "rating": 91.1
+        }
+      ],
+      "updatedAt": 1776589498697
+    },
+    {
+      "id": "394781942",
+      "name": "Amaiur Sarriegi",
+      "url": "https://www.futbin.com/26/player/24106_651/amaiur-sarriegi-isasa",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 89.3
+        },
+        {
+          "pos": "RW",
+          "rating": 90.1
+        },
+        {
+          "pos": "LW",
+          "rating": 90.1
+        }
+      ],
+      "updatedAt": 1776589305740
+    },
+    {
+      "id": "394781178",
+      "name": "Amiri",
+      "url": "https://www.futbin.com/26/player/23839_543_538_572_567_593_560_571_569_559_564/nadiem-amiri",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 90.5
+        }
+      ],
+      "updatedAt": 1776127617729
+    },
+    {
+      "id": "394781903",
+      "name": "Araujo",
+      "url": "https://www.futbin.com/26/player/23870_667/ronald-araujo",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 92.5
+        },
+        {
+          "pos": "LB",
+          "rating": 90.3
+        },
+        {
+          "pos": "RB",
+          "rating": 90.3
+        }
+      ],
+      "updatedAt": 1776589731416
+    },
+    {
+      "id": "394781122",
+      "name": "Aubameyang",
+      "url": "https://www.futbin.com/26/player/23830_540_538_593_571_559_572_567_563_564_569/pierre-emerick-aubameyang",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 2.3
+        }
+      ],
+      "updatedAt": 1776588982470
+    },
+    {
+      "id": "394781758",
+      "name": "Bakayoko",
+      "url": "https://www.futbin.com/26/player/23981_540_538_571_559_593_569_567_563_564_572_725/johan-bakayoko",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 94.1
+        }
+      ],
+      "updatedAt": 1776589148861
+    },
+    {
+      "id": "394781800",
+      "name": "Baldé",
+      "url": "https://www.futbin.com/26/player/23977_538_540_593_571_559_572_567_564_563_569/keita-balde",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 90.3
+        },
+        {
+          "pos": "CAM",
+          "rating": 89.1
+        }
+      ],
+      "updatedAt": 1776127650608
+    },
+    {
+      "id": "394781756",
+      "name": "Blackstenius",
+      "url": "https://www.futbin.com/26/player/23962_540_538_593_571_559_572_569_567_563_564/stina-blackstenius",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 91.8
+        }
+      ],
+      "updatedAt": 1776589045226
+    },
+    {
+      "id": "394781303",
+      "name": "Bove",
+      "url": "https://www.futbin.com/26/player/24256_440_440_440_336/edoardo-bove",
+      "positions": [
+        {
+          "pos": "CM",
+          "rating": 88.1
+        }
+      ],
+      "updatedAt": 1775724079232
+    },
+    {
+      "id": "394781248",
+      "name": "Bozdoğan",
+      "url": "https://www.futbin.com/evolutions/builder/23985_602_538_567_563_594_566_593_585_588_564_745_745_733_733_733_745_731_731_727?includeExpired=false",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 91.4
+        }
+      ],
+      "updatedAt": 1776589482397
+    },
+    {
+      "id": "394781216",
+      "name": "Brahim",
+      "url": "https://www.futbin.com/26/player/23953_538_540_571_559_593_572_569_567_563_564/brahim-diaz",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 92.7
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.3
+        }
+      ],
+      "updatedAt": 1776589162802
+    },
+    {
+      "id": "394781174",
+      "name": "Burger",
+      "url": "https://www.futbin.com/26/player/23991_602_538_593_585_566_567_563_594_564_588_650/wouter-burger",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 90.9
+        }
+      ],
+      "updatedAt": 1776589507115
+    },
+    {
+      "id": "394781528",
+      "name": "Cabella",
+      "url": "https://www.futbin.com/26/player/21862_651/remy-cabella",
+      "positions": [
+        {
+          "pos": "LW",
+          "rating": 88.3
+        },
+        {
+          "pos": "CAM",
+          "rating": 88.9
+        }
+      ],
+      "updatedAt": 1776127450302
+    },
+    {
+      "id": "394781236",
+      "name": "Cerný",
+      "url": "https://www.futbin.com/26/player/23992_540_538_571_559_593_572_569_567_563_564_666_695/vaclav-cerny",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 91.7
+        }
+      ],
+      "updatedAt": 1776589245577
+    },
+    {
+      "id": "394781768",
+      "name": "De Jong",
+      "url": "https://www.futbin.com/26/player/23812/1",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 92.6
+        }
+      ],
+      "updatedAt": 1776589418143
+    },
+    {
+      "id": "394781154",
+      "name": "Digne",
+      "url": "https://www.futbin.com/26/player/21864_694_668_668_668_694_694_696/lucas-digne",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 93.8
+        }
+      ],
+      "updatedAt": 1776589645002
+    },
+    {
+      "id": "394781606",
+      "name": "Dorgeles",
+      "url": "https://www.futbin.com/26/player/24267_666_687_687_687_688/nene-dorgeles",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 90.3
+        },
+        {
+          "pos": "RW",
+          "rating": 91.8
+        },
+        {
+          "pos": "CAM",
+          "rating": 89.6
+        }
+      ],
+      "updatedAt": 1776127300569
+    },
+    {
+      "id": "394781338",
+      "name": "Enciso",
+      "url": "https://www.futbin.com/26/player/23984_538_560_593_567_563_569_559_564_674/julio-cesar-enciso",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 91.2
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.2
+        }
+      ],
+      "updatedAt": 1776589073927
+    },
+    {
+      "id": "394781527",
+      "name": "Fudalla",
+      "url": "https://www.futbin.com/26/player/23975_543_538_572_567_571_560_569_593_559_564/vanessa-fudalla",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 91
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.6
+        }
+      ],
+      "updatedAt": 1776127591863
+    },
+    {
+      "id": "394781697",
+      "name": "Grosso",
+      "url": "https://www.futbin.com/26/player/23841_567_558_564_563_594_585_593_590_656/julia-grosso",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 91.8
+        },
+        {
+          "pos": "LB",
+          "rating": 90.7
+        }
+      ],
+      "updatedAt": 1776589445324
+    },
+    {
+      "id": "394781660",
+      "name": "Gwinn",
+      "url": "https://www.futbin.com/26/player/23965_608_605_587_588_585_594_571_566_567_586/giulia-gwinn",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 93.3
+        },
+        {
+          "pos": "RB",
+          "rating": 93.3
+        }
+      ],
+      "updatedAt": 1776589604867
+    },
+    {
+      "id": "394781695",
+      "name": "Harder",
+      "url": "https://www.futbin.com/26/player/23837_543_538_571_560_593_572_567_569_564_559/pernille-harder",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 91.2
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.2
+        }
+      ],
+      "updatedAt": 1776589376703
+    },
+    {
+      "id": "394781858",
+      "name": "Heaps",
+      "url": "https://www.futbin.com/26/player/23947_543_538_572_567_569_560_593_571_564_559/lindsey-heaps",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 92.2
+        }
+      ],
+      "updatedAt": 1776589354619
+    },
+    {
+      "id": "394781483",
+      "name": "Højlund",
+      "url": "https://www.futbin.com/26/player/20421_668_668_668_699/rasmus-hojlund",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 94
+        }
+      ],
+      "updatedAt": 1776588876703
+    },
+    {
+      "id": "394781604",
+      "name": "Howell",
+      "url": "https://www.futbin.com/26/player/23963_602_538_588_585_567_563_593_564_566_594/jaelin-howell",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 90.6
+        }
+      ],
+      "updatedAt": 1776589519153
+    },
+    {
+      "id": "394781284",
+      "name": "Itakura",
+      "url": "https://www.futbin.com/26/player/23982_527_523_588_585_589_593_586_574_566_567_692/ko-itakura",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 93.2
+        },
+        {
+          "pos": "CDM",
+          "rating": 91.9
+        }
+      ],
+      "updatedAt": 1776589458755
+    },
+    {
+      "id": "394781405",
+      "name": "Joao Felix",
+      "url": "https://www.futbin.com/26/player/24111_655_732/joao-felix-sequeira",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 92.9
+        },
+        {
+          "pos": "LW",
+          "rating": 92.2
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.6
+        }
+      ],
+      "updatedAt": 1776588949306
+    },
+    {
+      "id": "394781649",
+      "name": "Jobe Bellingham",
+      "url": "https://www.futbin.com/26/player/23966_602_585_567_538_588_566_563_593_564_590/jobe-bellingham",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 90.6
+        },
+        {
+          "pos": "CAM",
+          "rating": 86.9
+        }
+      ],
+      "updatedAt": 1776589532482
+    },
+    {
+      "id": "394781211",
+      "name": "Kapustka",
+      "url": "https://www.futbin.com/26/player/23986_543_538_572_567_593_571_560_569_564_559_688/bartosz-kapustka",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 90.4
+        },
+        {
+          "pos": "CDM",
+          "rating": 86
+        }
+      ],
+      "updatedAt": 1776127851910
+    },
+    {
+      "id": "394781988",
+      "name": "Karchaoui",
+      "url": "https://www.futbin.com/26/player/23946_538_602_567_563_593_564_566_585_588_590/sakina-karchaoui",
+      "positions": [
+        {
+          "pos": "LW",
+          "rating": 89
+        },
+        {
+          "pos": "RW",
+          "rating": 89
+        },
+        {
+          "pos": "CAM",
+          "rating": 89.1
+        },
+        {
+          "pos": "LB",
+          "rating": 91.5
+        }
+      ],
+      "updatedAt": 1776589319245
+    },
+    {
+      "id": "394781626",
+      "name": "Krezyman",
+      "url": "https://www.futbin.com/26/player/23952_540_538_593_571_572_569_564_567_559_563/nadia-krezyman",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 1.9
+        }
+      ],
+      "updatedAt": 1776589232227
+    },
+    {
+      "id": "394781478",
+      "name": "Maza",
+      "url": "https://www.futbin.com/26/player/21873_694_668_687_610_694_694_694_693/ibrahim-maza",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 91.4
+        }
+      ],
+      "updatedAt": 1776127582094
+    },
+    {
+      "id": "394781625",
+      "name": "Merentiel",
+      "url": "https://www.futbin.com/26/player/23976_540_538_593_571_559_569_563_572_567_564/miguel-angel-merentiel",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 90.5
+        },
+        {
+          "pos": "RW",
+          "rating": 90.1
+        }
+      ],
+      "updatedAt": 1776127331864
+    },
+    {
+      "id": "394781275",
+      "name": "Mingueza",
+      "url": "https://www.futbin.com/26/player/23980_608_605_587_588_585_594_586_571_566_567/oscar-mingueza-garcia",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 92.9
+        }
+      ],
+      "updatedAt": 1776127909871
+    },
+    {
+      "id": "394781746",
+      "name": "Morton",
+      "url": "https://www.futbin.com/26/player/23846_602_543_566_567_564_558_585_590_593_594/tyler-morton",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 89.9
+        }
+      ],
+      "updatedAt": 1776589540143
+    },
+    {
+      "id": "394781991",
+      "name": "Muhlhaus",
+      "url": "https://www.futbin.com/26/player/23853_655/larissa-muhlhaus",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 89.2
+        },
+        {
+          "pos": "LW",
+          "rating": 88.5
+        }
+      ],
+      "updatedAt": 1776408975201
+    },
+    {
+      "id": "394781982",
+      "name": "Oosterwolde",
+      "url": "https://www.futbin.com/26/player/23855_527_523_593_588_585_586_594_566_567_574_514/jayden-oosterwolde",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 92.7
+        },
+        {
+          "pos": "LB",
+          "rating": 92
+        }
+      ],
+      "updatedAt": 1776589747905
+    },
+    {
+      "id": "394781247",
+      "name": "Pepe",
+      "url": "https://www.futbin.com/26/player/23840_540_538_593_571_559_572_567_563_594_564_690/nicolas-pepe",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 92.3
+        },
+        {
+          "pos": "RW",
+          "rating": 93.6
+        }
+      ],
+      "updatedAt": 1776589199176
+    },
+    {
+      "id": "394781996",
+      "name": "Poljak",
+      "url": "https://www.futbin.com/26/player/23854_516_523_594_587_588_571_566_567_585_586_668_668_668_668_691_698/allegra-poljak",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 96.3
+        },
+        {
+          "pos": "RB",
+          "rating": 96.3
+        }
+      ],
+      "updatedAt": 1776589573587
+    },
+    {
+      "id": "394781302",
+      "name": "Renard",
+      "url": "https://www.futbin.com/26/player/23808_602_532_590_588_593_586_574_594_567_566/wendie-renard",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 91.3
+        }
+      ],
+      "updatedAt": 1776589690500
+    },
+    {
+      "id": "394781749",
+      "name": "Senesi",
+      "url": "https://www.futbin.com/26/player/23845_602_605_588_585_589_593_586_574_566_567/marcos-senesi",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 90
+        }
+      ],
+      "updatedAt": 1776589717271
+    },
+    {
+      "id": "394781615",
+      "name": "Thiago",
+      "url": "https://www.futbin.com/26/player/23838_540_538_593_571_572_559_569_567_563_564/igor-thiago-rodrigues",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 93
+        }
+      ],
+      "updatedAt": 1776588914936
+    },
+    {
+      "id": "394781331",
+      "name": "Thompson",
+      "url": "https://www.futbin.com/26/player/23960_663_605_587_588_585_594_586_571_567_566/gisele-thompson",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 94.4
+        }
+      ],
+      "updatedAt": 1776589581022
+    },
+    {
+      "id": "394781102",
+      "name": "Valente",
+      "url": "https://www.futbin.com/26/player/23990_543_538_572_567_569_560_593_571_564_559_675/luciano-valente",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 92.8
+        }
+      ],
+      "updatedAt": 1776589345250
+    },
+    {
+      "id": "394781713",
+      "name": "Victoria López",
+      "url": "https://www.futbin.com/26/player/24369/1",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 92.9
+        },
+        {
+          "pos": "ST",
+          "rating": 92.7
+        },
+        {
+          "pos": "RW",
+          "rating": 92.7
+        }
+      ],
+      "updatedAt": 1776588970917
+    },
+    {
+      "id": "394781222",
+      "name": "Wan-Bissaka",
+      "url": "https://www.futbin.com/26/player/23969_663_657_587_588_585_594_586_571_567_566/aaron-wan-bissaka",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 93.4
+        }
+      ],
+      "updatedAt": 1776589591969
+    },
+    {
+      "id": "394781477",
+      "name": "Watkins",
+      "url": "https://www.futbin.com/26/player/23959_538_540_571_559_593_572_569_567_563_564/ollie-watkins",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 91.9
+        }
+      ],
+      "updatedAt": 1776589032248
+    },
+    {
+      "id": "394781608",
+      "name": "Yılmaz",
+      "url": "https://www.futbin.com/26/player/23971_540_538_593_571_572_569_564_567_559_563/bars-alper-ylmaz",
+      "positions": [
+        {
+          "pos": "LW",
+          "rating": 91.7
+        }
+      ],
+      "updatedAt": 1776589281195
+    },
+    {
+      "id": "mnrey417qehm",
+      "name": "Carus",
+      "url": "https://www.futbin.com/26/player/24401_695/arianna-caruso",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 91.6
+        }
+      ],
+      "updatedAt": 1776589466948
+    },
+    {
+      "id": "mnsb9kqock0z",
+      "name": "a'a'a1111a",
+      "url": "12331",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1775789931069,
+      "deletedAt": 1775789931069
+    },
+    {
+      "id": "mnsbh92k705x",
+      "name": "112",
+      "url": "2222",
+      "positions": [],
+      "updatedAt": 1775789944444,
+      "deletedAt": 1775789944444
+    },
+    {
+      "id": "mnsbhl39zm92",
+      "name": "吱吱吱吱",
+      "url": "11",
+      "positions": [],
+      "updatedAt": 1775789958804,
+      "deletedAt": 1775789958804
+    },
+    {
+      "id": "mny0htzauebu",
+      "name": "Bischof",
+      "url": "https://www.futbin.com/26/player/24504_733_733_745_745_745_745_733/tom-bischof",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 90.8
+        },
+        {
+          "pos": "CDM",
+          "rating": 89.8
+        },
+        {
+          "pos": "LB",
+          "rating": 88.2
+        }
+      ],
+      "updatedAt": 1776354043231
+    },
+    {
+      "id": "mny0jkmv7jq7",
+      "name": "Joao Mario",
+      "url": "https://www.futbin.com/26/player/24507_731_745_745_731_731_733_733_735/joao-mario-neto-lopes",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 94.3
+        }
+      ],
+      "updatedAt": 1776589597153
+    },
+    {
+      "id": "mny0lewx55pf",
+      "name": "ruggeri",
+      "url": "https://www.futbin.com/26/player/18891_673_700/matteo-ruggeri",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 91.4
+        }
+      ],
+      "updatedAt": 1776134452929
+    },
+    {
+      "id": "mny1ii86h82d",
+      "name": "aaa",
+      "url": null,
+      "positions": [],
+      "updatedAt": 1776136383655,
+      "deletedAt": 1776136383655
+    },
+    {
+      "id": "mny1j66n4tm1",
+      "name": "bbb",
+      "url": null,
+      "positions": [],
+      "updatedAt": 1776136392560,
+      "deletedAt": 1776136392560
+    },
+    {
+      "id": "mny1sjhlp34t",
+      "name": "aaaaa",
+      "url": "1111",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 12
+        }
+      ],
+      "updatedAt": 1776136734657,
+      "deletedAt": 1776136734657
+    },
+    {
+      "id": "mny24d0snne7",
+      "name": "1a",
+      "url": null,
+      "positions": [],
+      "updatedAt": 1776137225337,
+      "deletedAt": 1776137225337
+    },
+    {
+      "id": "mny8cboxqups",
+      "name": "Kubo",
+      "url": "https://www.futbin.com/26/player/23909/1",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 92
+        }
+      ],
+      "updatedAt": 1776589221978
+    },
+    {
+      "id": "mny8d201du90",
+      "name": "Kim Min Jae",
+      "url": "https://www.futbin.com/26/player/23905/1",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 90.5
+        }
+      ],
+      "updatedAt": 1776589711787
+    },
+    {
+      "id": "mny8h3dvl333",
+      "name": "Gavi",
+      "url": "https://www.futbin.com/26/player/24561/1",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 91.5
+        },
+        {
+          "pos": "CM",
+          "rating": 93
+        }
+      ],
+      "updatedAt": 1776479621463
+    },
+    {
+      "id": "mny9zap24lsb",
+      "name": "aaa",
+      "url": "1",
+      "positions": [],
+      "updatedAt": 1776150232859,
+      "deletedAt": 1776150232859
+    },
+    {
+      "id": "mnzoe4hmoqw5",
+      "name": "Hwang In Beom",
+      "url": "https://www.futbin.com/26/player/23918_615_619_627/in-beom-hwang",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 83.7
+        },
+        {
+          "pos": "CDM",
+          "rating": 87.2
+        }
+      ],
+      "updatedAt": 1776234889786
+    },
+    {
+      "id": "mo2jbr0w11et",
+      "name": "Mittelstädt",
+      "url": "https://www.futbin.com/26/player/23983_608_605_594_588_587_571_585_586_566_567/maximilian-mittelstadt",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 93.3
+        }
+      ],
+      "updatedAt": 1776589655571
+    },
+    {
+      "id": "mo5j3g2s1m6m",
+      "name": "Bruninha",
+      "url": "https://www.futbin.com/evolutions/builder/18904_752_752?includeExpired=false&evolutionCategoryId=1",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 79.8
+        }
+      ],
+      "updatedAt": 1776588790564
+    },
+    {
+      "id": "mo5kytyb0snv",
+      "name": "Cubarsí",
+      "url": "https://www.futbin.com/26/player/24397/1",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 90.8
+        }
+      ],
+      "updatedAt": 1776591934499
+    }
+  ]
+}
