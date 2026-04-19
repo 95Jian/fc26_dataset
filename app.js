@@ -175,9 +175,14 @@ function addPosRow(pos='', rating='') {
   const inp = document.createElement('input'); inp.type='number'; inp.placeholder='评分'; inp.min=1; inp.max=99; inp.step='0.1'; inp.value=rating||'';
   inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); confirmSavePos(); } });
   sel.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); confirmSavePos(); } });
+  // 快速调整评分按钮
+  const btnMinus08 = document.createElement('button'); btnMinus08.type='button'; btnMinus08.className='pos-rating-btn'; btnMinus08.textContent='-0.8';
+  btnMinus08.onclick = () => { const v = parseFloat(inp.value); if (!isNaN(v)) { inp.value = (v - 0.8).toFixed(1); } };
+  const btnMinus09 = document.createElement('button'); btnMinus09.type='button'; btnMinus09.className='pos-rating-btn'; btnMinus09.textContent='-0.9';
+  btnMinus09.onclick = () => { const v = parseFloat(inp.value); if (!isNaN(v)) { inp.value = (v - 0.9).toFixed(1); } };
   const del = document.createElement('button'); del.className='pos-row-del'; del.textContent='×'; del.type='button';
   del.onclick = () => row.remove();
-  row.appendChild(sel); row.appendChild(inp); row.appendChild(del);
+  row.appendChild(sel); row.appendChild(inp); row.appendChild(btnMinus08); row.appendChild(btnMinus09); row.appendChild(del);
   list.appendChild(row);
 }
 

@@ -109,6 +109,8 @@ td.editing { padding: 4px 8px !important; }
 .pos-editor-row select { width: 90px; }
 .pos-editor-row input { width: 70px; }
 .pos-editor-row input:focus, .pos-editor-row select:focus { border-color: var(--accent); }
+.pos-rating-btn { background: var(--surface); border: 1px solid var(--border2); border-radius: 4px; color: var(--text2); font-size: 11px; cursor: pointer; padding: 3px 5px; line-height: 1; }
+.pos-rating-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 .pos-row-del { background: none; border: none; color: var(--text3); cursor: pointer; font-size: 16px; padding: 0 4px; border-radius: 3px; line-height: 1; }
 .pos-row-del:hover { background: var(--danger-light); color: var(--danger); }
 textarea.code-area { width: 100%; background: var(--surface2); border: 1px solid var(--border2); border-radius: var(--radius); color: #1d4ed8; font-family: 'Courier New', monospace; font-size: 12px; padding: 10px; resize: vertical; min-height: 110px; outline: none; }
