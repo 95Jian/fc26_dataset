@@ -1,7 +1,7 @@
 {
-  "version": "5.10.0",
-  "lastExportVersion": "5.10.0",
-  "lastExportTs": 1778422821303,
+  "version": "5.13.1",
+  "lastExportVersion": "5.13.1",
+  "lastExportTs": 1778675033402,
   "players": [
     {
       "id": "394781180",
@@ -90,7 +90,7 @@
     {
       "id": "394781903",
       "name": "Araujo",
-      "url": "https://www.futbin.com/evolutions/builder/23870_667_796?includeExpired=true&evolutionCategoryId=4&evolutionCategoryId=13&sort=upgrade-asc",
+      "url": "https://www.futbin.com/evolutions/builder/23870_667_796_815_815?includeExpired=true&evolutionCategoryId=4&evolutionCategoryId=13&sort=upgrade-asc",
       "positions": [
         {
           "pos": "CB",
@@ -105,19 +105,19 @@
           "rating": 90
         }
       ],
-      "updatedAt": 1778317513676
+      "updatedAt": 1778549424797
     },
     {
       "id": "394781122",
       "name": "Aubameyang",
-      "url": "https://www.futbin.com/26/player/23830_540_538_593_571_559_572_567_563_564_569/pierre-emerick-aubameyang",
+      "url": "https://www.futbin.com/evolutions/builder/23830_540_538_593_571_559_572_567_563_564_569_815_815?includeExpired=true&evolutionCategoryId=4",
       "positions": [
         {
           "pos": "ST",
-          "rating": 2.3
+          "rating": 91.2
         }
       ],
-      "updatedAt": 1776588982470
+      "updatedAt": 1778549492831
     },
     {
       "id": "394781758",
@@ -169,19 +169,20 @@
           "rating": 88.1
         }
       ],
-      "updatedAt": 1775724079232
+      "updatedAt": 1778550141485,
+      "deletedAt": 1778550141485
     },
     {
       "id": "394781248",
       "name": "Bozdoğan",
-      "url": "https://www.futbin.com/26/player/23985_602_538_567_563_594_566_593_585_588_564_745_745_733_733_733_745_731_731_727_754_808/can-bozdogan",
+      "url": "https://www.futbin.com/evolutions/builder/23985_602_538_567_563_594_566_593_585_588_564_745_745_733_733_733_745_731_731_727_754_808_843?includeExpired=false",
       "positions": [
         {
           "pos": "CDM",
           "rating": 91.3
         }
       ],
-      "updatedAt": 1777688514595
+      "updatedAt": 1778633957922
     },
     {
       "id": "394781216",
@@ -350,18 +351,18 @@
     {
       "id": "394781695",
       "name": "Harder",
-      "url": "https://www.futbin.com/26/player/23837_543_538_571_560_593_572_567_569_564_559/pernille-harder",
+      "url": "https://www.futbin.com/evolutions/builder/23837_543_538_571_560_593_572_567_569_564_559_814?includeExpired=true&evolutionCategoryId=4",
       "positions": [
         {
           "pos": "ST",
-          "rating": 91.2
+          "rating": 90.5
         },
         {
           "pos": "CAM",
-          "rating": 91.2
+          "rating": 90.5
         }
       ],
-      "updatedAt": 1776589376703
+      "updatedAt": 1778549369397
     },
     {
       "id": "394781858",
@@ -402,18 +403,18 @@
     {
       "id": "394781284",
       "name": "Itakura",
-      "url": "https://www.futbin.com/26/player/23982_527_523_588_585_589_593_586_574_566_567_692/ko-itakura",
+      "url": "https://www.futbin.com/26/player/23982_527_523_588_585_589_593_586_574_566_567_692_816/ko-itakura",
       "positions": [
         {
           "pos": "CB",
-          "rating": 91.7
+          "rating": 93
         },
         {
           "pos": "CDM",
-          "rating": 90.4
+          "rating": 91.3
         }
       ],
-      "updatedAt": 1778317556626
+      "updatedAt": 1778550059330
     },
     {
       "id": "394781405",
@@ -812,14 +813,14 @@
     {
       "id": "mny0lewx55pf",
       "name": "ruggeri",
-      "url": "https://www.futbin.com/26/player/18891_673_700/matteo-ruggeri",
+      "url": "https://www.futbin.com/26/player/18891_673_700_822/matteo-ruggeri",
       "positions": [
         {
           "pos": "LB",
-          "rating": 91.4
+          "rating": 89.3
         }
       ],
-      "updatedAt": 1776134452929
+      "updatedAt": 1778546939976
     },
     {
       "id": "mny1ii86h82d",
@@ -1093,6 +1094,50 @@
         }
       ],
       "updatedAt": 1778404192107
+    },
+    {
+      "id": "mp0kfv4zpnis",
+      "name": "Baumgartner",
+      "url": "https://www.futbin.com/26/player/25051/1",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 92.5
+        },
+        {
+          "pos": "CAM",
+          "rating": 92.9
+        }
+      ],
+      "updatedAt": 1778465501027
+    },
+    {
+      "id": "mp18sgmamnkr",
+      "name": "Bardghji",
+      "url": "https://www.futbin.com/26/player/24144_813/roony-bardghji",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 92.1
+        }
+      ],
+      "updatedAt": 1778506399522
+    },
+    {
+      "id": "mp19f6bbi5ea",
+      "name": "Reyna",
+      "url": "https://www.futbin.com/26/player/24127_822/giovanni-reyna",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 88.1
+        },
+        {
+          "pos": "CAM",
+          "rating": 87.1
+        }
+      ],
+      "updatedAt": 1778507459255
     }
   ]
 }
