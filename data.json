@@ -1,7 +1,7 @@
 {
-  "version": "5.13.1",
-  "lastExportVersion": "5.13.1",
-  "lastExportTs": 1778675033402,
+  "version": "5.14.2",
+  "lastExportVersion": "5.14.2",
+  "lastExportTs": 1778770471379,
   "players": [
     {
       "id": "394781180",
@@ -90,7 +90,7 @@
     {
       "id": "394781903",
       "name": "Araujo",
-      "url": "https://www.futbin.com/evolutions/builder/23870_667_796_815_815?includeExpired=true&evolutionCategoryId=4&evolutionCategoryId=13&sort=upgrade-asc",
+      "url": "https://www.futbin.com/evolutions/builder/23870_667_796_815_815_775_832?includeExpired=true&evolutionCategoryId=1&sort=upgrade-asc",
       "positions": [
         {
           "pos": "CB",
@@ -105,7 +105,7 @@
           "rating": 90
         }
       ],
-      "updatedAt": 1778549424797
+      "updatedAt": 1778722065747
     },
     {
       "id": "394781122",
@@ -559,7 +559,7 @@
     {
       "id": "394781991",
       "name": "Muhlhaus",
-      "url": "https://www.futbin.com/evolutions/builder/23853_540_538_593_569_571_572_564_567_559_563_655_754_767_808?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23853_540_538_593_569_571_572_564_567_559_563_655_754_767_808_843?includeExpired=false",
       "positions": [
         {
           "pos": "ST",
@@ -570,7 +570,7 @@
           "rating": 92.3
         }
       ],
-      "updatedAt": 1777897232202
+      "updatedAt": 1778770431815
     },
     {
       "id": "394781982",
@@ -1138,6 +1138,30 @@
         }
       ],
       "updatedAt": 1778507459255
+    },
+    {
+      "id": "mp5m02ykmolw",
+      "name": "Adams",
+      "url": "https://www.futbin.com/evolutions/builder/24166_843?includeExpired=false",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 86.9
+        }
+      ],
+      "updatedAt": 1778770454780
+    },
+    {
+      "id": "mp5m0dgxyw84",
+      "name": "Manea",
+      "url": "https://www.futbin.com/26/player/24167_843/cristian-manea",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 83.6
+        }
+      ],
+      "updatedAt": 1778770468401
     }
   ]
 }
