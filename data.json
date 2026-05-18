@@ -1,7 +1,7 @@
 {
-  "version": "5.14.2",
-  "lastExportVersion": "5.14.2",
-  "lastExportTs": 1778770471379,
+  "version": "5.17.0",
+  "lastExportVersion": "5.17.0",
+  "lastExportTs": 1779028500715,
   "players": [
     {
       "id": "394781180",
@@ -78,14 +78,14 @@
     {
       "id": "394781178",
       "name": "Amiri",
-      "url": "https://www.futbin.com/26/player/23839_543_538_572_567_593_560_571_569_559_564/nadiem-amiri",
+      "url": "https://www.futbin.com/evolutions/builder/23839_543_538_572_567_593_560_571_569_559_564_831?includeExpired=false",
       "positions": [
         {
           "pos": "CAM",
           "rating": 90.5
         }
       ],
-      "updatedAt": 1776127617729
+      "updatedAt": 1778860025550
     },
     {
       "id": "394781903",
@@ -94,18 +94,18 @@
       "positions": [
         {
           "pos": "CB",
-          "rating": 91.6
+          "rating": 95.2
         },
         {
           "pos": "LB",
-          "rating": 90
+          "rating": 93.3
         },
         {
           "pos": "RB",
-          "rating": 90
+          "rating": 93.3
         }
       ],
-      "updatedAt": 1778722065747
+      "updatedAt": 1778853274500
     },
     {
       "id": "394781122",
@@ -179,10 +179,10 @@
       "positions": [
         {
           "pos": "CDM",
-          "rating": 91.3
+          "rating": 91.6
         }
       ],
-      "updatedAt": 1778633957922
+      "updatedAt": 1778853193606
     },
     {
       "id": "394781216",
@@ -231,14 +231,14 @@
     {
       "id": "394781236",
       "name": "Cerny",
-      "url": "https://www.futbin.com/26/player/23992_540_538_571_559_593_572_569_567_563_564_666_695_647_788_786_788/vaclav-cerny",
+      "url": "https://www.futbin.com/evolutions/builder/23839_543_538_572_567_593_560_571_569_559_564_831?includeExpired=false",
       "positions": [
         {
           "pos": "RW",
-          "rating": 91.2
+          "rating": 92.3
         }
       ],
-      "updatedAt": 1777861283721
+      "updatedAt": 1778860041115
     },
     {
       "id": "394781768",
@@ -455,7 +455,7 @@
     {
       "id": "394781211",
       "name": "Kapustka",
-      "url": "https://www.futbin.com/26/player/23986_543_538_572_567_593_571_560_569_564_559_688_788_786_788/bartosz-kapustka",
+      "url": "https://www.futbin.com/evolutions/builder/23986_543_538_572_567_593_571_560_569_564_559_688_788_786_788_845?includeExpired=false",
       "positions": [
         {
           "pos": "CAM",
@@ -466,7 +466,7 @@
           "rating": 86
         }
       ],
-      "updatedAt": 1777732545031
+      "updatedAt": 1778843175168
     },
     {
       "id": "394781988",
@@ -547,19 +547,19 @@
     {
       "id": "394781746",
       "name": "Morton",
-      "url": "https://www.futbin.com/evolutions/builder/23846_602_543_566_567_564_558_585_590_593_594_822_808_788?includeExpired=true&sort=created-desc",
+      "url": "https://www.futbin.com/evolutions/builder/23846_602_543_566_567_564_558_585_590_593_594_822_808_788_845_831?includeExpired=true&sort=created-desc",
       "positions": [
         {
           "pos": "CDM",
-          "rating": 88.5
+          "rating": 91.1
         }
       ],
-      "updatedAt": 1778164390256
+      "updatedAt": 1778859980995
     },
     {
       "id": "394781991",
       "name": "Muhlhaus",
-      "url": "https://www.futbin.com/evolutions/builder/23853_540_538_593_569_571_572_564_567_559_563_655_754_767_808_843?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23853_540_538_593_569_571_572_564_567_559_563_655_754_767_808_843_845?includeExpired=false",
       "positions": [
         {
           "pos": "ST",
@@ -570,7 +570,7 @@
           "rating": 92.3
         }
       ],
-      "updatedAt": 1778770431815
+      "updatedAt": 1778843090500
     },
     {
       "id": "394781982",
@@ -611,14 +611,14 @@
       "positions": [
         {
           "pos": "LB",
-          "rating": 96.3
+          "rating": 97.1
         },
         {
           "pos": "RB",
-          "rating": 96.3
+          "rating": 97.1
         }
       ],
-      "updatedAt": 1778035053039
+      "updatedAt": 1778853328061
     },
     {
       "id": "394781302",
@@ -801,14 +801,14 @@
     {
       "id": "mny0jkmv7jq7",
       "name": "Joao Mario",
-      "url": "https://www.futbin.com/26/player/24507_731_745_745_731_731_733_733_735/joao-mario-neto-lopes",
+      "url": "https://www.futbin.com/26/player/24507_731_745_745_731_731_733_733_735_830/joao-mario-neto-lopes",
       "positions": [
         {
           "pos": "RB",
-          "rating": 94.3
+          "rating": 95.7
         }
       ],
-      "updatedAt": 1776589597153
+      "updatedAt": 1778936723562
     },
     {
       "id": "mny0lewx55pf",
@@ -966,10 +966,10 @@
       "positions": [
         {
           "pos": "CDM",
-          "rating": 91.9
+          "rating": 91.6
         }
       ],
-      "updatedAt": 1777688534386
+      "updatedAt": 1779022221247
     },
     {
       "id": "mohvpwvzejiq",
@@ -998,7 +998,7 @@
     {
       "id": "monpmvkf2yhq",
       "name": "Malard",
-      "url": "https://www.futbin.com/26/player/24398_786_767/melvine-malard",
+      "url": "https://www.futbin.com/evolutions/builder/24398_786_767_845?includeExpired=false",
       "positions": [
         {
           "pos": "LW",
@@ -1009,7 +1009,7 @@
           "rating": 88.2
         }
       ],
-      "updatedAt": 1777688165967
+      "updatedAt": 1778843141806
     },
     {
       "id": "monpspqecdva",
@@ -1162,6 +1162,118 @@
         }
       ],
       "updatedAt": 1778770468401
+    },
+    {
+      "id": "mp6z8rzcej7m",
+      "name": "Flint",
+      "url": "https://www.futbin.com/26/player/25131/taylor-flint",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 91.4
+        }
+      ],
+      "updatedAt": 1778853161640
+    },
+    {
+      "id": "mp8cj9uo4eq5",
+      "name": "pedersen",
+      "url": "https://www.futbin.com/evolutions/builder/24165_802?includeExpired=true",
+      "positions": [
+        {
+          "pos": "RB",
+          "rating": 90.5
+        }
+      ],
+      "updatedAt": 1778935952544
+    },
+    {
+      "id": "mp8etj6yvod3",
+      "name": "Ona Batlle",
+      "url": "https://www.futbin.com/26/player/25278/ona-batlle-pascual",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 95.1
+        },
+        {
+          "pos": "RB",
+          "rating": 95.1
+        }
+      ],
+      "updatedAt": 1778939790442
+    },
+    {
+      "id": "mp9rv1xdh9rr",
+      "name": "Dali",
+      "url": "https://www.futbin.com/26/player/25136/1",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 94.2
+        }
+      ],
+      "updatedAt": 1779022162561
+    },
+    {
+      "id": "mp9rw1hsbb84",
+      "name": "Froholdt",
+      "url": "https://www.futbin.com/26/player/25294/1",
+      "positions": [
+        {
+          "pos": "CAM",
+          "rating": 91.8
+        },
+        {
+          "pos": "CDM",
+          "rating": 91.9
+        }
+      ],
+      "updatedAt": 1779022208656
+    },
+    {
+      "id": "mp9rx6aul0c1",
+      "name": "Baumgartner",
+      "url": "https://www.futbin.com/26/player/25051/1",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 92.1
+        },
+        {
+          "pos": "CAM",
+          "rating": 92.6
+        }
+      ],
+      "updatedAt": 1779022261542
+    },
+    {
+      "id": "mp9rxuwst7wc",
+      "name": "Begraoui",
+      "url": "https://www.futbin.com/26/player/25301/1",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 93.9
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.7
+        }
+      ],
+      "updatedAt": 1779022293436
+    },
+    {
+      "id": "mp9rygbufq6m",
+      "name": "Pablo Fornals",
+      "url": "https://www.futbin.com/26/player/25297/1",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 92.5
+        }
+      ],
+      "updatedAt": 1779022321194
     }
   ]
 }
