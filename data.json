@@ -1,7 +1,7 @@
 {
-  "version": "5.17.0",
-  "lastExportVersion": "5.17.0",
-  "lastExportTs": 1779028500715,
+  "version": "5.19.7",
+  "lastExportVersion": "5.19.7",
+  "lastExportTs": 1779181354757,
   "players": [
     {
       "id": "394781180",
@@ -13,7 +13,7 @@
           "rating": 90.9
         }
       ],
-      "updatedAt": 1776589387743
+      "updatedAt": 1779178878557
     },
     {
       "id": "394781925",
@@ -103,9 +103,13 @@
         {
           "pos": "RB",
           "rating": 93.3
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
         }
       ],
-      "updatedAt": 1778853274500
+      "updatedAt": 1779178708250
     },
     {
       "id": "394781122",
@@ -651,10 +655,10 @@
       "positions": [
         {
           "pos": "ST",
-          "rating": 94
+          "rating": 93.6
         }
       ],
-      "updatedAt": 1777897437473
+      "updatedAt": 1779179046488
     },
     {
       "id": "394781331",
@@ -687,18 +691,22 @@
       "positions": [
         {
           "pos": "CAM",
-          "rating": 94
-        },
-        {
-          "pos": "ST",
-          "rating": 93.8
+          "rating": 93.7
         },
         {
           "pos": "RW",
-          "rating": 93.6
+          "rating": 93.2
+        },
+        {
+          "pos": "ST",
+          "rating": 93.4
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
         }
       ],
-      "updatedAt": 1778201124181
+      "updatedAt": 1779179030790
     },
     {
       "id": "394781222",
@@ -889,15 +897,19 @@
       "url": "https://www.futbin.com/26/player/24561/1",
       "positions": [
         {
-          "pos": "CAM",
-          "rating": 90.1
+          "pos": "CM",
+          "rating": 92
         },
         {
-          "pos": "CM",
-          "rating": 93
+          "pos": "CAM",
+          "rating": 89.7
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
         }
       ],
-      "updatedAt": 1777897846509
+      "updatedAt": 1779179101461
     },
     {
       "id": "mny9zap24lsb",
@@ -1118,10 +1130,14 @@
       "positions": [
         {
           "pos": "RW",
-          "rating": 92.1
+          "rating": 91.7
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
         }
       ],
-      "updatedAt": 1778506399522
+      "updatedAt": 1779177791512
     },
     {
       "id": "mp19f6bbi5ea",
@@ -1274,6 +1290,74 @@
         }
       ],
       "updatedAt": 1779022321194
+    },
+    {
+      "id": "mpcc8f50gtay",
+      "name": "Pajor",
+      "url": "https://www.futbin.com/26/player/25286/1",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 92.3
+        },
+        {
+          "pos": "LW",
+          "rating": 92
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1779177541157
+    },
+    {
+      "id": "mpcchdwdvbsc",
+      "name": "Raphinha",
+      "url": "https://www.futbin.com/26/player/25288/1",
+      "positions": [
+        {
+          "pos": "LW",
+          "rating": 94.4
+        },
+        {
+          "pos": "RW",
+          "rating": 94.4
+        },
+        {
+          "pos": "CAM",
+          "rating": 90.8
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1779177739381
+    },
+    {
+      "id": "mpccmfg9uw5u",
+      "name": "Fermin",
+      "url": "https://www.futbin.com/26/player/25308/1",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 90.9
+        },
+        {
+          "pos": "LW",
+          "rating": 91
+        },
+        {
+          "pos": "CAM",
+          "rating": 91.1
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1779177964473
     }
   ]
 }

@@ -44,8 +44,8 @@
     <div class="form-group"><label>球员名称 *</label><input type="text" id="ap-name" placeholder="例：Mbappé"></div>
     <div class="form-group"><label>Futbin 链接</label><input type="url" id="ap-url" placeholder="https://www.futbin.com/26/player/..."></div>
     <div class="form-group">
-      <label>位置 / 评分 <span style="font-weight:400;color:var(--text3)">（选位置后填评分，自动添加下一行）</span></label>
-      <div class="pos-editor-list" id="ap-pos-list"></div>
+      <label>位置 / 评分 <span style="font-weight:400;color:var(--text3)">（点击位置选中，输入评分）</span></label>
+      <div class="pitch-editor" id="ap-pitch"></div>
     </div>
     <div class="modal-actions">
       <button class="btn btn-secondary" onclick="closeModal('modal-add')">取消</button>
@@ -59,8 +59,7 @@
   <div class="modal" onclick="event.stopPropagation()">
     <h3 id="modal-pos-title">编辑位置</h3>
     <input type="hidden" id="pp-player-id">
-    <div class="pos-editor-list" id="pos-editor-list"></div>
-    <button class="btn btn-secondary btn-sm" onclick="addPosRow()" style="margin-bottom:14px">+ 添加位置</button>
+    <div class="pitch-editor" id="pp-pitch"></div>
     <div class="modal-actions">
       <button class="btn btn-secondary" onclick="closeModal('modal-pos')">取消</button>
       <button class="btn btn-primary" onclick="confirmSavePos()">保存</button>

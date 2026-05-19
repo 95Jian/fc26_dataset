@@ -65,6 +65,9 @@ function renderTable() {
   if (q) rows = rows.filter(p => p.name.toLowerCase().includes(q));
   if (filterPos) {
     rows.sort((a,b) => {
+      const aIsBarcelona = (a.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
+      const bIsBarcelona = (b.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
+      if (aIsBarcelona !== bIsBarcelona) return bIsBarcelona - aIsBarcelona;
       const ra = (a.positions||[]).find(x => x.pos === filterPos);
       const rb = (b.positions||[]).find(x => x.pos === filterPos);
       const va = ra && ra.rating != null ? ra.rating : -1;
@@ -87,11 +90,24 @@ function renderTable() {
   const rankMap = buildRankMap();
   tbody.innerHTML = rows.map(p => {
     const positions = p.positions || [];
-    const tagsHtml = positions.map(x => {
-      const tm = rankMap[x.pos];
-      const tier = (tm && x.rating != null && tm[x.rating]) ? ' tier' + tm[x.rating] : ' tier5';
+    const sortedPositions = [...positions].sort((a, b) => {
+      if (a.pos === 'Barcelona') return 1;
+      if (b.pos === 'Barcelona') return -1;
+      const ra = a.rating != null ? a.rating : -1;
+      const rb = b.rating != null ? b.rating : -1;
+      return rb - ra;
+    });
+    const tagsHtml = sortedPositions.map(x => {
+      let cls;
+      if (x.pos === 'Barcelona') {
+        cls = ' barcelona';
+      } else {
+        const tm = rankMap[x.pos];
+        const tier = (tm && x.rating != null && tm[x.rating]) ? ' tier' + tm[x.rating] : ' tier5';
+        cls = tier;
+      }
       const hi = filterPos && x.pos === filterPos ? ' highlighted' : '';
-      const cls = tier + hi;
+      cls += hi;
       const rating = x.rating != null ? `<span class="tag-rating">${Number(x.rating).toFixed(1)}</span>` : '';
       return `<span class="pos-tag${cls}">${esc(x.pos)}${rating}</span>`;
     }).join('');
@@ -144,104 +160,100 @@ function commitEdit(td) {
 }
 document.addEventListener('mousedown', e => { if (_activeEditCell && !_activeEditCell.contains(e.target)) commitEdit(_activeEditCell); });
 
+/* ---- pitch position editor ---- */
+const PITCH_LAYOUT = {
+  CB:  { x: 50, y: 88 },
+  LB:  { x: 15, y: 84 },
+  RB:  { x: 85, y: 84 },
+  CDM: { x: 50, y: 68 },
+  LM:  { x: 12, y: 50 },
+  CM:  { x: 50, y: 50 },
+  RM:  { x: 88, y: 50 },
+  CAM: { x: 50, y: 33 },
+  LW:  { x: 15, y: 16 },
+  RW:  { x: 85, y: 16 },
+  ST:  { x: 50, y: 6 },
+  Barcelona: { x: 30, y: 105 },
+};
+
+function buildPitchEditor(container, positions) {
+  container.innerHTML = '';
+  container.classList.remove('barcelona-active');
+  const FIELD_POSITIONS = ['CB','LB','RB','CDM','CM','CAM','LM','RM','LW','RW','ST','Barcelona'];
+  const posMap = {};
+  (positions||[]).forEach(x => { posMap[x.pos] = x.rating; });
+  for (const pos of FIELD_POSITIONS) {
+    const layout = PITCH_LAYOUT[pos];
+    const node = document.createElement('div');
+    node.className = 'pitch-node' + (pos in posMap ? ' active' : '') + (pos === 'Barcelona' ? ' barcelona-node' : '');
+    node.style.left = layout.x + '%';
+    node.style.top = layout.y + '%';
+    node.dataset.pos = pos;
+    const circle = document.createElement('div'); circle.className = 'node-circle';
+    const label = document.createElement('div'); label.className = 'node-label'; label.textContent = pos;
+    circle.appendChild(label);
+    const rating = document.createElement('input'); rating.className = 'node-rating'; rating.type = 'number'; rating.min = 1; rating.max = 99; rating.step = '0.1'; rating.placeholder = '—';
+    if (pos in posMap && posMap[pos] != null) rating.value = posMap[pos];
+    circle.addEventListener('click', () => {
+      node.classList.toggle('active');
+      if (pos === 'Barcelona') {
+        container.classList.toggle('barcelona-active', node.classList.contains('active'));
+      } else if (node.classList.contains('active')) {
+        setTimeout(() => rating.focus(), 50);
+      }
+    });
+    rating.addEventListener('click', e => e.stopPropagation());
+    node.appendChild(circle);
+    node.appendChild(rating);
+    container.appendChild(node);
+    if (pos === 'Barcelona' && node.classList.contains('active')) {
+      container.classList.add('barcelona-active');
+    }
+  }
+}
+
+function getPitchPositions(container) {
+  const positions = [];
+  container.querySelectorAll('.pitch-node.active').forEach(node => {
+    const pos = node.dataset.pos;
+    if (pos === 'Barcelona') { positions.push({ pos, rating: null }); return; }
+    const val = node.querySelector('.node-rating').value;
+    if (val.trim() === '') return;
+    const rating = parseFloat(val);
+    if (isNaN(rating)) return;
+    positions.push({ pos, rating });
+  });
+  return positions;
+}
+
 /* ---- pos editor modal ---- */
 function openEditPos(playerId) {
   const p = getPlayer(playerId); if (!p) return;
   document.getElementById('pp-player-id').value = playerId;
   document.getElementById('modal-pos-title').textContent = `编辑位置 — ${p.name}`;
-  const list = document.getElementById('pos-editor-list');
-  list.innerHTML = '';
-  (p.positions||[]).forEach((x,i) => addPosRow(x.pos, x.rating));
-  addPosRow('', '');
+  buildPitchEditor(document.getElementById('pp-pitch'), p.positions);
   showModal('modal-pos');
 }
-function addPosRow(pos='', rating='') {
-  const list = document.getElementById('pos-editor-list');
-  const row = document.createElement('div'); row.className = 'pos-editor-row';
-  const sel = document.createElement('select');
-  [['','— 位置 —'],...POSITIONS.map(v=>[v,v])].forEach(([v,l])=>{
-    const o=document.createElement('option'); o.value=v; o.textContent=l;
-    if(v===pos) o.selected=true; sel.appendChild(o);
-  });
-  sel.addEventListener('change', function() {
-    if (this.value !== '') {
-      setTimeout(() => inp.focus(), 10);
-      const rows = list.querySelectorAll('.pos-editor-row');
-      if (rows[rows.length - 1] === row) {
-        setTimeout(() => addPosRow('', ''), 50);
-      }
-    }
-  });
-  const inp = document.createElement('input'); inp.type='number'; inp.placeholder='评分'; inp.min=1; inp.max=99; inp.step='0.1'; inp.value=rating||'';
-  inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); confirmSavePos(); } });
-  sel.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); confirmSavePos(); } });
-  // 快速调整评分按钮
-  const del = document.createElement('button'); del.className='pos-row-del'; del.textContent='×'; del.type='button';
-  del.onclick = () => row.remove();
-  row.appendChild(sel); row.appendChild(inp); row.appendChild(del);
-  list.appendChild(row);
-}
 
-function addPosRowInModal(pos='', rating='') {
-  const list = document.getElementById('ap-pos-list');
-  const row = document.createElement('div'); row.className = 'pos-editor-row';
-  const sel = document.createElement('select');
-  [['','— 位置 —'],...POSITIONS.map(v=>[v,v])].forEach(([v,l])=>{
-    const o=document.createElement('option'); o.value=v; o.textContent=l;
-    if(v===pos) o.selected=true; sel.appendChild(o);
-  });
-  sel.addEventListener('change', function() {
-    if (this.value !== '') {
-      setTimeout(() => inp.focus(), 10);
-      const rows = list.querySelectorAll('.pos-editor-row');
-      if (rows[rows.length - 1] === row) {
-        setTimeout(() => addPosRowInModal('', ''), 50);
-      }
-    }
-  });
-  const inp = document.createElement('input'); inp.type='number'; inp.placeholder='评分'; inp.min=1; inp.max=99; inp.step='0.1'; inp.value=rating||'';
-  const del = document.createElement('button'); del.className='pos-row-del'; del.textContent='×'; del.type='button';
-  del.onclick = () => row.remove();
-  row.appendChild(sel); row.appendChild(inp); row.appendChild(del);
-  list.appendChild(row);
-  return row;
-}
 function confirmSavePos() {
   const playerId = document.getElementById('pp-player-id').value;
   const p = getPlayer(playerId); if (!p) return;
-  const rows = document.querySelectorAll('#pos-editor-list .pos-editor-row');
-  const positions = [];
-  for (const row of rows) {
-    const pos = row.querySelector('select').value;
-    const rating = parseFloat(row.querySelector('input').value) || null;
-    if (pos) positions.push({ pos, rating });
-  }
-  p.positions = positions; p.updatedAt = nowTs();
+  p.positions = getPitchPositions(document.getElementById('pp-pitch'));
+  p.updatedAt = nowTs();
   closeModal('modal-pos'); render(); toast('位置已保存','ok'); autoSave();
 }
 
 /* ---- add player ---- */
 function openAddPlayer() {
   document.getElementById('ap-name').value=''; document.getElementById('ap-url').value='';
-  const list = document.getElementById('ap-pos-list');
-  list.innerHTML = '';
-  addPosRowInModal('', '');
+  buildPitchEditor(document.getElementById('ap-pitch'), []);
   showModal('modal-add'); setTimeout(()=>document.getElementById('ap-name').focus(),50);
 }
 function confirmAddPlayer() {
   const name = document.getElementById('ap-name').value.trim();
   const url  = document.getElementById('ap-url').value.trim() || null;
   if (!name) { toast('请填写球员名称','err'); return; }
-
-  const rows = document.querySelectorAll('#ap-pos-list .pos-editor-row');
-  const positions = [];
-  for (const row of rows) {
-    const pos = row.querySelector('select').value;
-    const ratingInput = row.querySelector('input');
-    const rating = ratingInput.value.trim() !== '' ? parseFloat(ratingInput.value) : null;
-    if (pos) positions.push({ pos, rating });
-  }
-
+  const positions = getPitchPositions(document.getElementById('ap-pitch'));
   appData.players.push({id:genId(), name, url, positions, updatedAt:nowTs()});
   closeModal('modal-add'); render(); toast(`已添加 ${name}`,'ok'); autoSave();
 }
