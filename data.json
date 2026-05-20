@@ -1,7 +1,7 @@
 {
-  "version": "5.19.7",
-  "lastExportVersion": "5.19.7",
-  "lastExportTs": 1779181354757,
+  "version": "5.20.1",
+  "lastExportVersion": "5.20.1",
+  "lastExportTs": 1779242290316,
   "players": [
     {
       "id": "394781180",
@@ -252,9 +252,17 @@
         {
           "pos": "CDM",
           "rating": 91.1
+        },
+        {
+          "pos": "CM",
+          "rating": 90
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
         }
       ],
-      "updatedAt": 1777688553272
+      "updatedAt": 1779242233891
     },
     {
       "id": "394781154",
@@ -1341,23 +1349,123 @@
       "url": "https://www.futbin.com/26/player/25308/1",
       "positions": [
         {
-          "pos": "ST",
-          "rating": 90.9
-        },
-        {
-          "pos": "LW",
-          "rating": 91
+          "pos": "CM",
+          "rating": 90.4
         },
         {
           "pos": "CAM",
           "rating": 91.1
         },
         {
+          "pos": "LW",
+          "rating": 91
+        },
+        {
+          "pos": "ST",
+          "rating": 90.9
+        },
+        {
           "pos": "Barcelona",
           "rating": null
         }
       ],
-      "updatedAt": 1779177964473
+      "updatedAt": 1779242149707
+    },
+    {
+      "id": "mpde3dqbcgyd",
+      "name": "Pau Cubarsi",
+      "url": "https://www.futbin.com/26/player/24397/1",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 89.1
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1779240911427
+    },
+    {
+      "id": "mpdec8snn1mr",
+      "name": "Ona Batlle",
+      "url": "https://www.futbin.com/26/player/25278/1",
+      "positions": [
+        {
+          "pos": "LB",
+          "rating": 95.1
+        },
+        {
+          "pos": "RB",
+          "rating": 95.1
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1779241314695
+    },
+    {
+      "id": "mpdekmfz9os7",
+      "name": "Kiwior",
+      "url": "https://www.futbin.com/26/player/25284/1",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 94.6
+        }
+      ],
+      "updatedAt": 1779241705631
+    },
+    {
+      "id": "mpdem6jyi6xr",
+      "name": "André",
+      "url": "https://www.futbin.com/26/player/25149/1",
+      "positions": [
+        {
+          "pos": "CDM",
+          "rating": 94.2
+        },
+        {
+          "pos": "CM",
+          "rating": 92.7
+        }
+      ],
+      "updatedAt": 1779241778350
+    },
+    {
+      "id": "mpdemqyu56au",
+      "name": "Pubill",
+      "url": "https://www.futbin.com/26/player/25304/1",
+      "positions": [
+        {
+          "pos": "CB",
+          "rating": 92.8
+        },
+        {
+          "pos": "RB",
+          "rating": 93.2
+        }
+      ],
+      "updatedAt": 1779241804806
+    },
+    {
+      "id": "mpdesswyswiy",
+      "name": "Graham Hansen",
+      "url": "https://www.futbin.com/26/player/25321/1",
+      "positions": [
+        {
+          "pos": "RW",
+          "rating": 92.8
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1779242087266
     }
   ]
 }

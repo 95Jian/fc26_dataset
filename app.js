@@ -24,8 +24,8 @@ function nowTs() { return Date.now(); }
 /* ---- pos filters ---- */
 function renderPosFilters() {
   const c = document.getElementById('pos-filters');
-  c.innerHTML = [['全部',''],...POSITIONS.map(p=>[p,p])].map(([l,v])=>
-    `<button class="pos-btn${filterPos===v?' active':''}" onclick="setFilterPos('${v}')">${l}</button>`
+  c.innerHTML = [['全部',''],...POSITIONS.map(p=>[p,p]),['Barcelona','Barcelona']].map(([l,v])=>
+    `<button class="pos-btn${filterPos===v?' active':''}${v==='Barcelona'?' pos-btn-barcelona':''}" onclick="setFilterPos('${v}')">${l}</button>`
   ).join('');
 }
 function setFilterPos(p) { filterPos = p; renderPosFilters(); renderTable(); }
@@ -64,16 +64,36 @@ function renderTable() {
   if (filterPos) rows = rows.filter(p => (p.positions||[]).some(x => x.pos === filterPos));
   if (q) rows = rows.filter(p => p.name.toLowerCase().includes(q));
   if (filterPos) {
-    rows.sort((a,b) => {
-      const aIsBarcelona = (a.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
-      const bIsBarcelona = (b.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
-      if (aIsBarcelona !== bIsBarcelona) return bIsBarcelona - aIsBarcelona;
-      const ra = (a.positions||[]).find(x => x.pos === filterPos);
-      const rb = (b.positions||[]).find(x => x.pos === filterPos);
-      const va = ra && ra.rating != null ? ra.rating : -1;
-      const vb = rb && rb.rating != null ? rb.rating : -1;
-      return vb - va;
-    });
+    const rankMap = buildRankMap();
+    if (filterPos === 'Barcelona') {
+      rows.sort((a,b) => {
+        const bestTier = (p) => {
+          let best = 6;
+          for (const x of (p.positions||[])) {
+            if (x.pos === 'Barcelona' || x.rating == null) continue;
+            const tm = rankMap[x.pos];
+            const t = (tm && tm[x.rating]) || 5;
+            if (t < best) best = t;
+          }
+          return best;
+        };
+        const ta = bestTier(a), tb = bestTier(b);
+        if (ta !== tb) return ta - tb;
+        const maxRating = (p) => Math.max(...(p.positions||[]).filter(x => x.pos !== 'Barcelona' && x.rating != null).map(x => x.rating), -1);
+        return maxRating(b) - maxRating(a);
+      });
+    } else {
+      rows.sort((a,b) => {
+        const aIsBarcelona = (a.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
+        const bIsBarcelona = (b.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
+        if (aIsBarcelona !== bIsBarcelona) return bIsBarcelona - aIsBarcelona;
+        const ra = (a.positions||[]).find(x => x.pos === filterPos);
+        const rb = (b.positions||[]).find(x => x.pos === filterPos);
+        const va = ra && ra.rating != null ? ra.rating : -1;
+        const vb = rb && rb.rating != null ? rb.rating : -1;
+        return vb - va;
+      });
+    }
   } else {
     rows.sort((a,b) => {
       let va = a[sortKey]??'', vb = b[sortKey]??'';

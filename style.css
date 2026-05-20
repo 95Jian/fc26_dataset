@@ -41,6 +41,9 @@ header h1 { font-size: 15px; font-weight: 700; color: var(--accent); flex: 1; }
 .pos-btn { padding: 3px 10px; border-radius: 14px; border: 1px solid var(--border2); background: var(--surface2); color: var(--text2); font-size: 12px; cursor: pointer; transition: all .12s; }
 .pos-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-light); }
 .pos-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.pos-btn-barcelona { background: repeating-linear-gradient(90deg, #a50044 0px, #a50044 3px, #004d98 3px, #004d98 6px); border-color: #004d98; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+.pos-btn-barcelona:hover { background: repeating-linear-gradient(90deg, #a50044 0px, #a50044 3px, #004d98 3px, #004d98 6px); border-color: #fff; color: #fff; }
+.pos-btn-barcelona.active { background: repeating-linear-gradient(90deg, #a50044 0px, #a50044 3px, #004d98 3px, #004d98 6px); border-color: #fff; box-shadow: 0 0 6px rgba(165,0,68,.5); }
 /* table */
 .table-wrap { padding: 16px 20px; overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; min-width: 560px; table-layout: fixed; }
@@ -114,7 +117,7 @@ td.editing { padding: 4px 8px !important; }
 .pitch-node .node-label { font-size: 9px; font-weight: 700; color: rgba(255,255,255,.7); text-shadow: 0 1px 2px rgba(0,0,0,.5); }
 .pitch-node.active .node-circle { background: #22c55e; border-color: #fff; box-shadow: 0 0 8px rgba(34,197,94,.6); }
 .pitch-node.active .node-label { color: #fff; }
-.pitch-node .node-rating { width: 44px; height: 20px; border: none; border-radius: 3px; background: rgba(0,0,0,.5); color: #fff; font-size: 13px; font-weight: 600; text-align: center; outline: none; display: none; }
+.pitch-node .node-rating { width: 50px; height: 22px; border: none; border-radius: 3px; background: rgba(0,0,0,.5); color: #fff; font-size: 13px; font-weight: 600; text-align: center; outline: none; display: none; }
 .pitch-node.active .node-rating { display: block; }
 .pitch-node .node-rating:focus { box-shadow: 0 0 0 2px var(--accent); }
 .pitch-node .node-rating::-webkit-inner-spin-button,
