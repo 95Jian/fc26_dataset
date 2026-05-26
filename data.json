@@ -1,7 +1,7 @@
 {
-  "version": "5.20.1",
-  "lastExportVersion": "5.20.1",
-  "lastExportTs": 1779242290316,
+  "version": "5.26.0",
+  "lastExportVersion": "5.26.0",
+  "lastExportTs": 1779800708816,
   "players": [
     {
       "id": "394781180",
@@ -114,14 +114,22 @@
     {
       "id": "394781122",
       "name": "Aubameyang",
-      "url": "https://www.futbin.com/evolutions/builder/23830_540_538_593_571_559_572_567_563_564_569_815_815?includeExpired=true&evolutionCategoryId=4",
+      "url": "https://www.futbin.com/26/player/23830_540_538_593_571_559_572_567_563_564_569_815_815_846_850_862/pierre-emerick-aubameyang",
       "positions": [
         {
+          "pos": "LM",
+          "rating": 94.9
+        },
+        {
+          "pos": "LW",
+          "rating": 94.8
+        },
+        {
           "pos": "ST",
-          "rating": 91.2
+          "rating": 94.5
         }
       ],
-      "updatedAt": 1778549492831
+      "updatedAt": 1779721543520
     },
     {
       "id": "394781758",
@@ -347,7 +355,7 @@
     {
       "id": "394781660",
       "name": "Gwinn",
-      "url": "https://www.futbin.com/26/player/23965_608_605_587_588_585_594_571_566_567_586/giulia-gwinn",
+      "url": "https://www.futbin.com/26/player/23965_608_605_587_588_585_594_571_566_567_570_853/giulia-gwinn",
       "positions": [
         {
           "pos": "LB",
@@ -358,7 +366,7 @@
           "rating": 93.3
         }
       ],
-      "updatedAt": 1776589604867
+      "updatedAt": 1779554536711
     },
     {
       "id": "394781695",
@@ -623,14 +631,14 @@
       "positions": [
         {
           "pos": "LB",
-          "rating": 97.1
+          "rating": 96.7
         },
         {
           "pos": "RB",
-          "rating": 97.1
+          "rating": 96.7
         }
       ],
-      "updatedAt": 1778853328061
+      "updatedAt": 1779503821990
     },
     {
       "id": "394781302",
@@ -902,22 +910,22 @@
     {
       "id": "mny8h3dvl333",
       "name": "Gavi",
-      "url": "https://www.futbin.com/26/player/24561/1",
+      "url": "https://www.futbin.com/26/player/24561_748_847/pablo-martin-paez-gavira",
       "positions": [
         {
           "pos": "CM",
-          "rating": 92
+          "rating": 94.9
         },
         {
           "pos": "CAM",
-          "rating": 89.7
+          "rating": 93.9
         },
         {
           "pos": "Barcelona",
           "rating": null
         }
       ],
-      "updatedAt": 1779179101461
+      "updatedAt": 1779718430262
     },
     {
       "id": "mny9zap24lsb",
@@ -946,14 +954,18 @@
     {
       "id": "mo2jbr0w11et",
       "name": "Mittelstädt",
-      "url": "https://www.futbin.com/26/player/23983_608_605_594_588_587_571_585_586_566_567_766/maximilian-mittelstadt",
+      "url": "https://www.futbin.com/evolutions/builder/23983_608_605_594_588_587_571_585_586_566_567_766_844?includeExpired=false",
       "positions": [
         {
           "pos": "LB",
-          "rating": 93.7
+          "rating": 96.1
+        },
+        {
+          "pos": "CM",
+          "rating": 88.8
         }
       ],
-      "updatedAt": 1777687953238
+      "updatedAt": 1779503802377
     },
     {
       "id": "mo5j3g2s1m6m",
@@ -1118,7 +1130,7 @@
     {
       "id": "mp0kfv4zpnis",
       "name": "Baumgartner",
-      "url": "https://www.futbin.com/26/player/25051/1",
+      "url": "https://www.futbin.com/26/player/23830_540_538_593_571_559_572_567_563_564_569_815_815_846_850_862/pierre-emerick-aubameyang",
       "positions": [
         {
           "pos": "ST",
@@ -1129,7 +1141,8 @@
           "rating": 92.9
         }
       ],
-      "updatedAt": 1778465501027
+      "updatedAt": 1779721509489,
+      "deletedAt": 1779721509489
     },
     {
       "id": "mp18sgmamnkr",
@@ -1269,7 +1282,8 @@
           "rating": 92.6
         }
       ],
-      "updatedAt": 1779022261542
+      "updatedAt": 1779721514995,
+      "deletedAt": 1779721514995
     },
     {
       "id": "mp9rxuwst7wc",
@@ -1285,7 +1299,8 @@
           "rating": 91.7
         }
       ],
-      "updatedAt": 1779022293436
+      "updatedAt": 1779721564791,
+      "deletedAt": 1779721564791
     },
     {
       "id": "mp9rygbufq6m",
@@ -1452,10 +1467,14 @@
       "updatedAt": 1779241804806
     },
     {
-      "id": "mpdesswyswiy",
-      "name": "Graham Hansen",
+      "id": "mpi46tkoo79m",
+      "name": "Hansen",
       "url": "https://www.futbin.com/26/player/25321/1",
       "positions": [
+        {
+          "pos": "RM",
+          "rating": 93.3
+        },
         {
           "pos": "RW",
           "rating": 92.8
@@ -1465,7 +1484,19 @@
           "rating": null
         }
       ],
-      "updatedAt": 1779242087266
+      "updatedAt": 1779526596408
+    },
+    {
+      "id": "mpiklur4398v",
+      "name": "Kluivert",
+      "url": "https://www.futbin.com/evolutions/builder/24555_853_849?includeExpired=false",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 86.8
+        }
+      ],
+      "updatedAt": 1779800687396
     }
   ]
 }
