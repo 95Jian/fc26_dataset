@@ -1,7 +1,7 @@
 {
-  "version": "6.1.1",
-  "lastExportVersion": "6.1.1",
-  "lastExportTs": 1780284484187,
+  "version": "6.1.2",
+  "lastExportVersion": "6.1.2",
+  "lastExportTs": 1780305490987,
   "players": [
     {
       "id": "394781180",
@@ -1653,6 +1653,22 @@
         }
       ],
       "updatedAt": 1780283541797
+    },
+    {
+      "id": "mpuxdnrxjo41",
+      "name": "Lewandowski",
+      "url": "https://www.futbin.com/26/player/25440/1",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 93.9
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1780301224916
     }
   ]
 }
