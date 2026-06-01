@@ -84,9 +84,6 @@ function renderTable() {
       });
     } else {
       rows.sort((a,b) => {
-        const aIsBarcelona = (a.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
-        const bIsBarcelona = (b.positions||[]).some(x => x.pos === 'Barcelona') ? 1 : 0;
-        if (aIsBarcelona !== bIsBarcelona) return bIsBarcelona - aIsBarcelona;
         const ra = (a.positions||[]).find(x => x.pos === filterPos);
         const rb = (b.positions||[]).find(x => x.pos === filterPos);
         const va = ra && ra.rating != null ? ra.rating : -1;
@@ -110,9 +107,13 @@ function renderTable() {
   const rankMap = buildRankMap();
   tbody.innerHTML = rows.map(p => {
     const positions = p.positions || [];
-    const sortedPositions = [...positions].sort((a, b) => {
-      if (a.pos === 'Barcelona') return 1;
-      if (b.pos === 'Barcelona') return -1;
+    const isBarcelona = positions.some(x => x.pos === 'Barcelona');
+    const filteredPositions = positions.filter(x => x.pos !== 'Barcelona');
+    const sortedPositions = [...filteredPositions].sort((a, b) => {
+      if (filterPos && filterPos !== 'Barcelona') {
+        if (a.pos === filterPos && b.pos !== filterPos) return -1;
+        if (b.pos === filterPos && a.pos !== filterPos) return 1;
+      }
       const ra = a.rating != null ? a.rating : -1;
       const rb = b.rating != null ? b.rating : -1;
       return rb - ra;
@@ -135,7 +136,7 @@ function renderTable() {
     const urlHtml = p.url
       ? `<a href="${esc(p.url)}" target="_blank" title="${esc(p.url)}">${esc(p.url)}</a>`
       : `<span style="color:var(--text3);font-size:12px">— 双击添加</span>`;
-    return `<tr data-id="${p.id}">
+    return `<tr data-id="${p.id}"${isBarcelona ? ' class="row-barcelona"' : ''}>
       <td class="col-name editable" ondblclick="startEdit(this,'${p.id}','name')">${esc(p.name)}</td>
       <td class="col-url  editable" ondblclick="startEdit(this,'${p.id}','url')">${urlHtml}</td>
       <td class="col-pos" ondblclick="openEditPos('${p.id}')">
