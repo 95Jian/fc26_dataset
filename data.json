@@ -1,7 +1,7 @@
 {
-  "version": "6.1.2",
-  "lastExportVersion": "6.1.2",
-  "lastExportTs": 1780305490987,
+  "version": "6.4.0",
+  "lastExportVersion": "6.4.0",
+  "lastExportTs": 1780539935504,
   "players": [
     {
       "id": "394781180",
@@ -110,22 +110,18 @@
       "positions": [
         {
           "pos": "CB",
-          "rating": 94.9
+          "rating": 93.8
         },
         {
           "pos": "LB",
-          "rating": 93
-        },
-        {
-          "pos": "RB",
-          "rating": 93
+          "rating": 91.9
         },
         {
           "pos": "Barcelona",
           "rating": null
         }
       ],
-      "updatedAt": 1779329622379
+      "updatedAt": 1780539823719
     },
     {
       "id": "394781122",
@@ -380,7 +376,7 @@
     {
       "id": "394781697",
       "name": "Grosso",
-      "url": "https://www.futbin.com/26/player/23841_567_558_564_563_594_585_593_590_656/julia-grosso",
+      "url": "https://www.futbin.com/evolutions/builder/23841_567_558_564_563_594_585_593_590_656_871?includeExpired=false",
       "positions": [
         {
           "pos": "CDM",
@@ -391,7 +387,7 @@
           "rating": 89.2
         }
       ],
-      "updatedAt": 1777688589108
+      "updatedAt": 1780370763728
     },
     {
       "id": "394781660",
@@ -412,7 +408,7 @@
     {
       "id": "394781695",
       "name": "Harder",
-      "url": "https://www.futbin.com/26/player/23837_543_538_571_560_593_572_567_569_564_559_814_870/pernille-harder",
+      "url": "https://www.futbin.com/evolutions/builder/23837_543_538_571_560_593_572_567_569_564_559_814_870_871?includeExpired=false",
       "positions": [
         {
           "pos": "CAM",
@@ -427,7 +423,7 @@
           "rating": 90.3
         }
       ],
-      "updatedAt": 1779844346944
+      "updatedAt": 1780370786973
     },
     {
       "id": "394781858",
@@ -472,42 +468,42 @@
     {
       "id": "394781284",
       "name": "Itakura",
-      "url": "https://www.futbin.com/26/player/23982_527_523_588_585_589_593_586_574_566_567_692_816/ko-itakura",
+      "url": "https://www.futbin.com/evolutions/builder/23982_527_523_588_585_589_593_586_574_566_567_692_816_865?includeExpired=false",
       "positions": [
         {
           "pos": "CB",
-          "rating": 93
+          "rating": 94.7
         },
         {
           "pos": "CDM",
-          "rating": 91.3
+          "rating": 92.7
         }
       ],
-      "updatedAt": 1778550059330
+      "updatedAt": 1780539799326
     },
     {
       "id": "394781405",
       "name": "Joao Felix",
-      "url": "https://www.futbin.com/26/player/24111_655_732_870/joao-felix-sequeira",
+      "url": "https://www.futbin.com/26/player/24111_655_732_870_871_868/joao-felix-sequeira",
       "positions": [
         {
           "pos": "CAM",
-          "rating": 90.3
+          "rating": 91.4
         },
         {
           "pos": "LM",
-          "rating": 90.9
+          "rating": 93
         },
         {
           "pos": "LW",
-          "rating": 90.8
+          "rating": 92.5
         },
         {
           "pos": "ST",
-          "rating": 91.6
+          "rating": 92.3
         }
       ],
-      "updatedAt": 1779844399851
+      "updatedAt": 1780371064683
     },
     {
       "id": "394781649",
@@ -624,14 +620,14 @@
     {
       "id": "394781746",
       "name": "Morton",
-      "url": "https://www.futbin.com/evolutions/builder/23846_602_543_566_567_564_558_585_590_593_594_822_808_788_845_831?includeExpired=true&sort=created-desc",
+      "url": "https://www.futbin.com/evolutions/builder/23846_602_543_566_567_564_558_585_590_593_594_822_808_788_845_831_871?includeExpired=true&sort=created-desc",
       "positions": [
         {
           "pos": "CDM",
           "rating": 91.1
         }
       ],
-      "updatedAt": 1778859980995
+      "updatedAt": 1780370779877
     },
     {
       "id": "394781991",
@@ -672,22 +668,22 @@
     {
       "id": "394781247",
       "name": "Pepe",
-      "url": "https://www.futbin.com/26/player/23840_540_538_593_571_559_572_567_563_594_564_690_787/nicolas-pepe",
+      "url": "https://www.futbin.com/evolutions/builder/23840_540_538_593_571_559_572_567_563_594_564_690_787_566?includeExpired=false&evolutionCategoryId=12",
       "positions": [
         {
           "pos": "RM",
-          "rating": 93.5
+          "rating": 94.1
         },
         {
           "pos": "RW",
-          "rating": 93.2
+          "rating": 93.5
         },
         {
           "pos": "ST",
-          "rating": 92
+          "rating": 92.3
         }
       ],
-      "updatedAt": 1780283204497
+      "updatedAt": 1780447606955
     },
     {
       "id": "394781996",
@@ -800,14 +796,14 @@
     {
       "id": "394781222",
       "name": "Wan-Bissaka",
-      "url": "https://www.futbin.com/evolutions/builder/23969_663_657_587_588_585_594_586_571_567_566_870?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23969_663_657_587_588_585_594_586_571_567_566_870_871?includeExpired=false",
       "positions": [
         {
           "pos": "RB",
           "rating": 93.4
         }
       ],
-      "updatedAt": 1779842322103
+      "updatedAt": 1780370794101
     },
     {
       "id": "394781477",
@@ -1330,10 +1326,14 @@
       "positions": [
         {
           "pos": "CDM",
-          "rating": 94.2
+          "rating": 93.1
+        },
+        {
+          "pos": "CM",
+          "rating": 92
         }
       ],
-      "updatedAt": 1779022162561
+      "updatedAt": 1780539876692
     },
     {
       "id": "mp9rw1hsbb84",
@@ -1528,7 +1528,8 @@
           "rating": 94.6
         }
       ],
-      "updatedAt": 1779241705631
+      "updatedAt": 1780539830625,
+      "deletedAt": 1780539830625
     },
     {
       "id": "mpdem6jyi6xr",
@@ -1544,7 +1545,8 @@
           "rating": 92.7
         }
       ],
-      "updatedAt": 1779241778350
+      "updatedAt": 1780539865168,
+      "deletedAt": 1780539865168
     },
     {
       "id": "mpdemqyu56au",
