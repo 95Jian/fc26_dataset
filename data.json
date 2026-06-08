@@ -1,7 +1,7 @@
 {
-  "version": "6.4.0",
-  "lastExportVersion": "6.4.0",
-  "lastExportTs": 1780539935504,
+  "version": "6.8.2",
+  "lastExportVersion": "6.8.2",
+  "lastExportTs": 1780909196160,
   "players": [
     {
       "id": "394781180",
@@ -130,18 +130,18 @@
       "positions": [
         {
           "pos": "LM",
-          "rating": 94.9
+          "rating": 93.5
         },
         {
           "pos": "LW",
-          "rating": 94.8
+          "rating": 93.4
         },
         {
           "pos": "ST",
-          "rating": 94.5
+          "rating": 93.2
         }
       ],
-      "updatedAt": 1779721543520
+      "updatedAt": 1780905968418
     },
     {
       "id": "394781758",
@@ -376,7 +376,7 @@
     {
       "id": "394781697",
       "name": "Grosso",
-      "url": "https://www.futbin.com/evolutions/builder/23841_567_558_564_563_594_585_593_590_656_871?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23841_567_558_564_563_594_585_593_590_656_871_885?includeExpired=false",
       "positions": [
         {
           "pos": "CDM",
@@ -387,7 +387,7 @@
           "rating": 89.2
         }
       ],
-      "updatedAt": 1780370763728
+      "updatedAt": 1780650450316
     },
     {
       "id": "394781660",
@@ -408,11 +408,11 @@
     {
       "id": "394781695",
       "name": "Harder",
-      "url": "https://www.futbin.com/evolutions/builder/23837_543_538_571_560_593_572_567_569_564_559_814_870_871?includeExpired=false",
+      "url": "https://www.futbin.com/26/player/23837_543_538_571_560_593_572_567_569_564_559_814_870_871_885_879/pernille-harder",
       "positions": [
         {
           "pos": "CAM",
-          "rating": 90.6
+          "rating": 90.9
         },
         {
           "pos": "RM",
@@ -420,10 +420,10 @@
         },
         {
           "pos": "ST",
-          "rating": 90.3
+          "rating": 90.7
         }
       ],
-      "updatedAt": 1780370786973
+      "updatedAt": 1780905492680
     },
     {
       "id": "394781858",
@@ -443,7 +443,7 @@
     },
     {
       "id": "394781483",
-      "name": "Højlund",
+      "name": "Hojlund",
       "url": "https://www.futbin.com/26/player/20421_668_668_668_699/rasmus-hojlund",
       "positions": [
         {
@@ -451,7 +451,7 @@
           "rating": 92.2
         }
       ],
-      "updatedAt": 1779844442489
+      "updatedAt": 1780904539289
     },
     {
       "id": "394781604",
@@ -508,7 +508,7 @@
     {
       "id": "394781649",
       "name": "Bellingham",
-      "url": "https://www.futbin.com/evolutions/builder/23966_602_585_567_538_588_566_563_593_564_590_870?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23966_602_585_567_538_588_566_563_593_564_590_870_885?includeExpired=false&evolutionCategoryId=1&evolutionCategoryId=2&evolutionCategoryId=4&evolutionCategoryId=6",
       "positions": [
         {
           "pos": "CDM",
@@ -519,7 +519,7 @@
           "rating": 85.5
         }
       ],
-      "updatedAt": 1779842314278
+      "updatedAt": 1780650206914
     },
     {
       "id": "394781211",
@@ -652,7 +652,7 @@
     {
       "id": "394781982",
       "name": "Oosterwolde",
-      "url": "https://www.futbin.com/evolutions/builder/23855_527_523_593_588_585_586_594_566_567_574_514_746_853_853_853_870?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23855_527_523_593_588_585_586_594_566_567_574_514_746_853_853_853_870_885?includeExpired=false",
       "positions": [
         {
           "pos": "CB",
@@ -663,7 +663,7 @@
           "rating": 91.8
         }
       ],
-      "updatedAt": 1780043930574
+      "updatedAt": 1780650305267
     },
     {
       "id": "394781247",
@@ -728,14 +728,14 @@
     {
       "id": "394781615",
       "name": "Thiago",
-      "url": "https://www.futbin.com/26/player/23838_540_538_593_571_572_559_569_567_563_564_765/igor-thiago-rodrigues",
+      "url": "https://www.futbin.com/evolutions/builder/23838_540_538_593_571_572_559_569_567_563_564_765_878?includeExpired=false",
       "positions": [
         {
           "pos": "ST",
-          "rating": 93.6
+          "rating": 95
         }
       ],
-      "updatedAt": 1779179046488
+      "updatedAt": 1780904869258
     },
     {
       "id": "394781331",
@@ -752,18 +752,18 @@
     {
       "id": "394781102",
       "name": "Valente",
-      "url": "https://www.futbin.com/26/player/23990_543_538_572_567_569_560_593_571_564_559_675/luciano-valente",
+      "url": "https://www.futbin.com/26/player/23990_543_538_572_567_569_560_593_571_564_559_675_879/luciano-valente",
       "positions": [
         {
           "pos": "CM",
-          "rating": 88.7
+          "rating": 89
         },
         {
           "pos": "CAM",
-          "rating": 91
+          "rating": 90.8
         }
       ],
-      "updatedAt": 1779844903812
+      "updatedAt": 1780905526320
     },
     {
       "id": "394781713",
@@ -796,14 +796,14 @@
     {
       "id": "394781222",
       "name": "Wan-Bissaka",
-      "url": "https://www.futbin.com/evolutions/builder/23969_663_657_587_588_585_594_586_571_567_566_870_871?includeExpired=false",
+      "url": "https://www.futbin.com/evolutions/builder/23969_663_657_587_588_585_594_586_571_567_566_870_871_885?includeExpired=false",
       "positions": [
         {
           "pos": "RB",
           "rating": 93.4
         }
       ],
-      "updatedAt": 1780370794101
+      "updatedAt": 1780650258994
     },
     {
       "id": "394781477",
@@ -980,22 +980,26 @@
     {
       "id": "mny8h3dvl333",
       "name": "Gavi",
-      "url": "https://www.futbin.com/26/player/24561_748/pablo-martin-paez-gavira",
+      "url": "https://www.futbin.com/26/player/24561_748_998_993/pablo-martin-paez-gavira",
       "positions": [
         {
           "pos": "CM",
-          "rating": 92.8
+          "rating": 93.7
         },
         {
           "pos": "CAM",
-          "rating": 89.7
+          "rating": 92.9
+        },
+        {
+          "pos": "ST",
+          "rating": 90
         },
         {
           "pos": "Barcelona",
           "rating": null
         }
       ],
-      "updatedAt": 1779844872564
+      "updatedAt": 1780909129255
     },
     {
       "id": "mny9zap24lsb",
@@ -1457,30 +1461,30 @@
     {
       "id": "mpccmfg9uw5u",
       "name": "Fermin",
-      "url": "https://www.futbin.com/26/player/25308/1",
+      "url": "https://www.futbin.com/26/player/25308_998/fermin-lopez-marin",
       "positions": [
         {
           "pos": "CM",
-          "rating": 90.4
+          "rating": 90.6
         },
         {
           "pos": "CAM",
-          "rating": 91.1
+          "rating": 91.3
         },
         {
           "pos": "LW",
-          "rating": 91
+          "rating": 91.2
         },
         {
           "pos": "ST",
-          "rating": 90.8
+          "rating": 91.5
         },
         {
           "pos": "Barcelona",
           "rating": null
         }
       ],
-      "updatedAt": 1779844358767
+      "updatedAt": 1780909109977
     },
     {
       "id": "mpde3dqbcgyd",
@@ -1591,18 +1595,18 @@
       "positions": [
         {
           "pos": "CB",
-          "rating": 91.8
+          "rating": 91.5
         },
         {
           "pos": "CDM",
-          "rating": 95.3
+          "rating": 95
         },
         {
           "pos": "CM",
-          "rating": 94.5
+          "rating": 94.2
         }
       ],
-      "updatedAt": 1780284193446
+      "updatedAt": 1780909152079
     },
     {
       "id": "mpeuwclk1d6x",
@@ -1663,14 +1667,58 @@
       "positions": [
         {
           "pos": "ST",
-          "rating": 93.9
+          "rating": 93.6
         },
         {
           "pos": "Barcelona",
           "rating": null
         }
       ],
-      "updatedAt": 1780301224916
+      "updatedAt": 1780906049437
+    },
+    {
+      "id": "mq4wt1g2hyxz",
+      "name": "Waterman",
+      "url": "https://www.futbin.com/26/player/25481_939_954_949_962_940_942_938_958_896_899_892/waterman",
+      "positions": [
+        {
+          "pos": "ST",
+          "rating": 91.5
+        }
+      ],
+      "updatedAt": 1780904918162
+    },
+    {
+      "id": "mq4xeg0z8x38",
+      "name": "Ferran Torres",
+      "url": "https://www.futbin.com/26/player/25633/1",
+      "positions": [
+        {
+          "pos": "LM",
+          "rating": 94.2
+        },
+        {
+          "pos": "RM",
+          "rating": 94.2
+        },
+        {
+          "pos": "LW",
+          "rating": 93.8
+        },
+        {
+          "pos": "RW",
+          "rating": 93.8
+        },
+        {
+          "pos": "ST",
+          "rating": 93
+        },
+        {
+          "pos": "Barcelona",
+          "rating": null
+        }
+      ],
+      "updatedAt": 1780905926122
     }
   ]
 }
