@@ -21,7 +21,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', syste
 /* header */
 header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 20px; display: flex; align-items: center; gap: 10px; position: sticky; top: 0; z-index: 100; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
 header h1 { font-size: 15px; font-weight: 700; color: var(--accent); flex: 1; }
-.version-badge { background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 3px 11px; font-size: 12px; color: var(--text2); user-select: none; }
 /* buttons */
 .btn { padding: 6px 14px; border-radius: var(--radius); border: 1px solid transparent; cursor: pointer; font-size: 13px; font-weight: 500; transition: all .15s; white-space: nowrap; }
 .btn:hover { filter: brightness(.95); }
@@ -132,8 +131,6 @@ td.editing { padding: 4px 8px !important; }
 .pitch-node.barcelona-node.active .node-circle { border-color: #fff; box-shadow: 0 0 10px rgba(165,0,68,.7); }
 .pitch-node.barcelona-node .node-label { color: #fff; font-size: 11px; }
 .pitch-node.barcelona-node .node-rating { display: none !important; }
-textarea.code-area { width: 100%; background: var(--surface2); border: 1px solid var(--border2); border-radius: var(--radius); color: #1d4ed8; font-family: 'Courier New', monospace; font-size: 12px; padding: 10px; resize: vertical; min-height: 110px; outline: none; }
-textarea.code-area:focus { border-color: var(--accent); }
 /* toast */
 #toast { position: fixed; bottom: 24px; right: 24px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 11px 18px; font-size: 13px; z-index: 9999; opacity: 0; transform: translateY(8px); transition: all .2s; pointer-events: none; max-width: 300px; box-shadow: 0 4px 16px rgba(0,0,0,.1); }
 #toast.show { opacity: 1; transform: translateY(0); }

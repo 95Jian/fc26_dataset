@@ -13,7 +13,7 @@ async function initData() {
   } catch {}
   // 服务器不可用时初始化空数据
   const d = new Date();
-  appData = { version: `${d.getMonth()+1}.${d.getDate()}.0`, lastExportVersion: '', lastExportTs: 0, players: [] };
+  appData = { version: `${d.getMonth()+1}.${d.getDate()}.0`, players: [] };
 }
 
 function getPlayer(id) { return appData.players.find(p => p.id === id); }
@@ -147,8 +147,7 @@ function renderTable() {
   }).join('');
 }
 
-function renderVersion() { document.getElementById('ver-display').textContent = appData.version; }
-function render() { renderPosFilters(); renderTable(); renderVersion(); }
+function render() { renderPosFilters(); renderTable(); }
 function sortBy(key) { if (sortKey===key) sortAsc=!sortAsc; else {sortKey=key;sortAsc=true;} renderTable(); }
 
 /* ---- inline edit (name / url) ---- */
@@ -287,78 +286,7 @@ function deletePlayer(id) {
   render(); toast(`已删除 ${p.name}`,'warn'); autoSave();
 }
 
-/* ---- import ---- */
-function openImport() { document.getElementById('import-text').value=''; document.getElementById('import-preview').innerHTML=''; showModal('modal-import'); }
 
-// 解析新格式：FC26:{...}
-// 缩写还原：i=id n=name u=url p=positions k=pos r=rating ua=updatedAt da=deletedAt
-function parseImport(text) {
-  const t = text.trim();
-  if (!t.startsWith('FC26:')) throw new Error('格式错误，需以 FC26: 开头');
-  const payload = JSON.parse(t.slice(5));
-  payload.changes = (payload.c || []).map(o => ({
-    id:        o.i,
-    name:      o.n,
-    url:       o.u  || null,
-    positions: (o.p || []).map(x => ({ pos: x.k, rating: x.r ?? null })),
-    updatedAt: o.ua || 0,
-    ...(o.da ? { deletedAt: o.da } : {}),
-  }));
-  return payload;
-}
-
-function previewImport(d) {
-  const changes = d.changes || [];
-  const byId = new Map(appData.players.map(p => [p.id, p]));
-  let chgN = 0, delN = 0;
-  for (const c of changes) {
-    if (c.deletedAt) { if (byId.has(c.id)) delN++; }
-    else chgN++;
-  }
-  return `增量导入 · 版本 ${d.v} · 变动 ${chgN} / 删除 ${delN}`;
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('import-text').addEventListener('input', function() {
-    const pv = document.getElementById('import-preview');
-    try {
-      const d = parseImport(this.value);
-      const w = d.pv !== appData.version
-        ? `<div style="color:var(--warn);margin-top:4px">⚠ 版本不连续：导出基于 ${d.pv}，本地为 ${appData.version}</div>` : '';
-      pv.innerHTML = `✅ ${previewImport(d)}${w}`;
-    } catch(e) { pv.innerHTML = this.value.trim() ? `<span style="color:var(--danger)">❌ ${e.message}</span>` : ''; }
-  });
-});
-
-function mergeImport(d) {
-  const changes = d.changes || [];
-  const byId = new Map(appData.players.map(p => [p.id, p]));
-  let addN = 0, updN = 0, delN = 0;
-  for (const c of changes) {
-    const existing = byId.get(c.id);
-    if (c.deletedAt) {
-      if (existing) { existing.deletedAt = c.deletedAt; existing.updatedAt = c.updatedAt; delN++; }
-    } else if (existing) {
-      if (!existing.updatedAt || c.updatedAt >= existing.updatedAt) Object.assign(existing, c);
-      updN++;
-    } else {
-      appData.players.push(c);
-      addN++;
-    }
-  }
-  return { addN, updN, delN };
-}
-
-function confirmImport() {
-  try {
-    const d = parseImport(document.getElementById('import-text').value);
-    const r = mergeImport(d);
-    appData.version = d.v; appData.lastExportVersion = d.v;
-    closeModal('modal-import'); render();
-    toast(`增量导入成功 · +${r.addN} ~${r.updN} -${r.delN}`, 'ok');
-    autoSave();
-  } catch(e) { toast('导入失败：' + e.message, 'err'); }
-}
 
 /* ---- auto save ---- */
 let _saving = false;

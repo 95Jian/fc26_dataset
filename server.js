@@ -5,7 +5,6 @@ const path = require('path');
 const PORT      = 8765;
 const ROOT      = __dirname;
 const DATA_FILE = path.join(ROOT, 'data.json');
-const EXPORT_DIR = ROOT;
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
@@ -21,11 +20,10 @@ const server = http.createServer((req, res) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   if (req.method === 'OPTIONS') { res.writeHead(204); res.end(); return; }
 
-  // POST /shutdown — 安全关闭并导出
+  // POST /shutdown — 安全关闭
   if (req.method === 'POST' && req.url === '/shutdown') {
     res.writeHead(200); res.end(JSON.stringify({ ok: true }));
     console.log('\n[关闭] 收到关闭指令...');
-    doExportOnExit();
     setTimeout(() => process.exit(0), 200);
     return;
   }
@@ -73,72 +71,10 @@ const server = http.createServer((req, res) => {
   });
 });
 
-/* ---- 关闭时增量导出 ---- */
-function calcNextVersion(appData) {
-  const d = new Date();
-  const todayPrefix = `${d.getMonth()+1}.${d.getDate()}`;
-  const cur = appData.version || '';
-  // 今天的日期前缀相同：第三位 +1；否则新的一天从 0 开始
-  const seq = cur.startsWith(todayPrefix + '.')
-    ? parseInt(cur.split('.')[2] || '0') + 1
-    : 0;
-  return `${todayPrefix}.${seq}`;
-}
-
-function doExportOnExit() {
-  try {
-    const raw = fs.readFileSync(DATA_FILE, 'utf8');
-    const appData = JSON.parse(raw);
-
-    const since = appData.lastExportTs || 0;
-    const changed = (appData.players || []).filter(p =>
-      (p.updatedAt && p.updatedAt > since) ||
-      (p.deletedAt && p.deletedAt > since)
-    );
-
-    if (!changed.length) {
-      console.log('\n[导出] 无修改，跳过生成 export.txt');
-      return;
-    }
-
-    const lv  = appData.lastExportVersion || appData.version;
-    const nv  = calcNextVersion(appData);
-    const now = Date.now();
-
-    // 字段缩写压缩体积：i=id n=name u=url p=positions k=pos r=rating ua=updatedAt da=deletedAt
-    const compact = changed.map(p => {
-      const o = { i: p.id, n: p.name };
-      if (p.url)       o.u  = p.url;
-      if (p.positions) o.p  = p.positions.map(x => x.rating != null ? { k: x.pos, r: x.rating } : { k: x.pos });
-      if (p.updatedAt) o.ua = p.updatedAt;
-      if (p.deletedAt) o.da = p.deletedAt;
-      return o;
-    });
-    const payload = { v: nv, pv: lv, c: compact };
-    const text = 'FC26:' + JSON.stringify(payload);
-
-    const exportFile = path.join(EXPORT_DIR, `${nv}_export.txt`);
-    fs.writeFileSync(exportFile, text, 'utf8');
-
-    // 更新 lastExportTs 和版本号，避免下次重复导出相同内容
-    appData.version           = nv;
-    appData.lastExportVersion = nv;
-    appData.lastExportTs      = now;
-    fs.writeFileSync(DATA_FILE, JSON.stringify(appData, null, 2), 'utf8');
-
-    const chgN    = changed.filter(p => !p.deletedAt).length;
-    const deleted = changed.filter(p => p.deletedAt).length;
-    console.log(`\n[导出] 已生成 ${nv}_export.txt（变动 ${chgN} / 删除 ${deleted}）`);
-    console.log(`[导出] 版本 ${lv} → ${nv}`);
-  } catch (e) {
-    console.error('\n[导出] 生成失败:', e.message);
-  }
-}
-
 server.listen(PORT, '127.0.0.1', () => {
   const url = `http://localhost:${PORT}`;
   console.log(`FC26 进化追踪器已启动：${url}`);
-  console.log('请勿直接关闭此窗口，在此窗口按任意键可安全关闭并自动导出。\n');
+  console.log('请勿直接关闭此窗口，在此窗口按任意键可安全关闭。\n');
 
   const { exec } = require('child_process');
   const firefox = `"D:\\Mozilla Firefox\\firefox.exe"`;

@@ -8,8 +8,7 @@
 <body>
 <header>
   <h1>⚽ FC26 进化追踪器</h1>
-  <span class="version-badge">v<span id="ver-display">—</span></span>
-  <button class="btn btn-secondary" onclick="openImport()">↓ 导入</button>
+  
 </header>
 <div class="toolbar">
   <input type="text" id="search-input" placeholder="搜索球员名…" oninput="renderTable()">
@@ -67,19 +66,6 @@
   </div>
 </div>
 
-<!-- 导入 -->
-<div class="modal-overlay" id="modal-import" style="display: none;" onclick="closeModal('modal-import',event)">
-  <div class="modal" onclick="event.stopPropagation()">
-    <h3>导入数据</h3>
-    <p style="color:var(--text2);font-size:13px;margin-bottom:12px">粘贴从另一台电脑导出的文本，增量合并到本地数据。</p>
-    <textarea class="code-area" id="import-text" rows="5" placeholder="粘贴导出的文本…"></textarea>
-    <div id="import-preview" style="margin-top:10px;font-size:13px;color:var(--text2);min-height:20px"></div>
-    <div class="modal-actions">
-      <button class="btn btn-secondary" onclick="closeModal('modal-import')">取消</button>
-      <button class="btn btn-primary" onclick="confirmImport()">导入合并</button>
-    </div>
-  </div>
-</div>
 
 <script src="app.js"></script>
 </body></html>
