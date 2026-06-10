@@ -1,7 +1,7 @@
 {
-  "version": "6.8.2",
-  "lastExportVersion": "6.8.2",
-  "lastExportTs": 1780909196160,
+  "version": "6.10.0",
+  "lastExportVersion": "6.10.0",
+  "lastExportTs": 1781065995917,
   "players": [
     {
       "id": "394781180",
@@ -25,7 +25,7 @@
     },
     {
       "id": "394781925",
-      "name": "Aït-Nouri",
+      "name": "Ait-Nouri",
       "url": "https://www.futbin.com/26/player/23956_608_605_587_588_585_594_586_571_566_567/rayan-ait-nouri",
       "positions": [
         {
@@ -33,7 +33,7 @@
           "rating": 94
         }
       ],
-      "updatedAt": 1776589629715
+      "updatedAt": 1781063290105
     },
     {
       "id": "394781876",
@@ -568,14 +568,30 @@
     {
       "id": "394781626",
       "name": "Krezyman",
-      "url": "https://www.futbin.com/26/player/23952_540_538_593_571_572_569_564_567_559_563/nadia-krezyman",
+      "url": "https://www.futbin.com/26/player/23952_540_538_593_571_572_569_564_567_559_563_883_942/nadia-krezyman",
       "positions": [
         {
+          "pos": "LB",
+          "rating": 86.5
+        },
+        {
+          "pos": "CM",
+          "rating": 89.6
+        },
+        {
+          "pos": "LM",
+          "rating": 93.6
+        },
+        {
+          "pos": "RM",
+          "rating": 93.6
+        },
+        {
           "pos": "RW",
-          "rating": 1.9
+          "rating": 93.9
         }
       ],
-      "updatedAt": 1776589232227
+      "updatedAt": 1781065957477
     },
     {
       "id": "394781478",
